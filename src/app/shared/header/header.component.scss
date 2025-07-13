@@ -1,0 +1,68 @@
+section {
+    display: flex;
+    justify-content: center;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+        max-width: 1440px;
+        box-sizing: border-box;
+        padding: 0 8px;
+
+        >a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        >img {
+            width: 96px;
+            height: 92px;
+        }
+    }
+
+    .switcher {
+        display: flex;
+        align-items: center;
+
+        span {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            color: white;
+            transition: color 0.3s;
+            padding: 0 4px;
+
+            &.active {
+                color: coral;
+            }
+        }
+
+        .track {
+            background: coral;
+            width: 25px;
+            height: 10px;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .circle {
+            background: blue;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            transition: left 0.3s;
+
+            &.right {
+                left: 12px;
+            }
+        }
+    }
+}

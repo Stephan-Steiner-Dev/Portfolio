@@ -1,0 +1,14 @@
+<section>
+    <div>
+        <img src="../../../assets/icons/my-icon.png" alt="">
+        <a *ngFor="let item of menuItems" [href]="item.link">{{ item.label }}</a>
+
+        <div class="switcher">
+            <span (click)="switchLanguage('EN')" [class.active]="currentLang === 'EN'">EN</span>
+            <div class="track" (click)="switchLanguage(currentLang === 'EN' ? 'DE' : 'EN')">
+                <div class="circle" [class.right]="currentLang === 'DE'"></div>
+            </div>
+            <span (click)="switchLanguage('DE')" [class.active]="currentLang === 'DE'">DE</span>
+        </div>
+    </div>
+</section>
