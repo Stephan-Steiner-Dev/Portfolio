@@ -5,10 +5,14 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [ CommonModule, HeaderComponent],
+  imports: [ CommonModule, HeaderComponent ],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
+  firstPart = 'Frontend';
+  secondPart = 'DEVELOPER';
 
+  get firstLetters() { return this.firstPart.split(''); }
+  get secondLetters() { return this.secondPart.split(''); }
 }

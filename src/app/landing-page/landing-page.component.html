@@ -1,4 +1,29 @@
-<section>
-    <app-header></app-header>
-
+<section class="section-main">
+    <div class="above-the-fold">
+        <div class="upper-half">
+            <div class="top-left">
+                <button>Hello World</button>
+                <div>
+                    <ng-container *ngFor="let char of firstLetters; let i = index">
+                        <span class="letter" [ngClass]="char === char.toLowerCase() ? 'lower' : 'upper'">
+                            {{ char }}
+                        </span>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="user-image-div">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="lower-half">
+            <div class="bottom-div">
+                <ng-container *ngFor="let char of secondLetters; let i = index">
+                    <span class="letter" [ngClass]="char === char.toLowerCase() ? 'lower' : 'upper'">
+                        {{ char }}
+                    </span>
+                </ng-container>
+            </div>
+            <button>Get in Touch</button>
+        </div>
+    </div>
 </section>

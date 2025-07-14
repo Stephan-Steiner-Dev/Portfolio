@@ -1,7 +1,61 @@
 <section>
     <div>
         <img src="../../../assets/icons/my-icon.png" alt="">
-        <a *ngFor="let item of menuItems" [href]="item.link">{{ item.label }}</a>
+
+        <a class="draw-link" href="#">About me
+            <svg viewBox="0 0 180 60" class="circle-svg" preserveAspectRatio="none">
+                <path d="
+                    M93,4
+                    C20,5 20,55 90,55
+                    C160,55 160,5 85,11
+                " />
+            </svg>
+        </a>
+
+        <a class="underline-link" href="#">
+            Skills
+            <svg class="underline-svg" viewBox="0 0 160 60" preserveAspectRatio="none">
+                <path d="
+                    M-20,14
+                    C  20,10   50,7   70,10
+                    C 100,18 130,6  150,12
+                " />
+            </svg>
+        </a>
+
+        <a class="fade-link diag-link" href="#">
+            Projects
+            <svg class="diag-svg" viewBox="0 0 260 40" preserveAspectRatio="none">
+                <path d="
+                    M0,10 
+                    Q10,2 20,10 
+                    T40,10
+                    T60,10
+                    T80,10
+                    T100,10
+                    T120,10
+                    T140,10
+                    T160,10
+                    T180,10
+                    T200,10
+                    T220,10
+                    T240,10
+                    T260,10
+                " />
+            </svg>
+        </a>
+
+        <a class="scale-link" href="#">
+            Contact
+            <svg class="scale-svg" viewBox="0 0 260 30" preserveAspectRatio="none">
+                <path d="
+                    M30,18
+                    L130,18
+                    L60,28
+                    L230,20
+                " />
+            </svg>
+        </a>
 
         <div class="switcher">
             <span (click)="switchLanguage('EN')" [class.active]="currentLang === 'EN'">EN</span>

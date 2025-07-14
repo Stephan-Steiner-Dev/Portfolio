@@ -1,3 +1,18 @@
 body {
      margin: 0;
+     font-family: 'BricolageGrotesque';
 }
+
+@font-face {
+  font-family: 'BricolageGrotesque';
+  /* URL in "" damit das Komma im Dateinamen nicht stört */
+  src: url("assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf")
+       format("truetype");
+  /* Achsen-Ranges für Variable Fonts */
+  font-weight: 100 900;        /* wght von 100 bis 900 */
+  font-stretch: 75% 125%;      /* wdth von 75% bis 125% (falls dein Font das unterstützt) */
+  font-style: normal;
+  font-display: swap;
+}
+
+

@@ -10,13 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  menuItems = [
-    { label: 'About me', link: '#' },
-    { label: 'Skills', link: '#' },
-    { label: 'Projects', link: '#' },
-    { label: 'Contact', link: '#' },
-  ];
-
 
   currentLang: 'EN' | 'DE' = 'EN';
 

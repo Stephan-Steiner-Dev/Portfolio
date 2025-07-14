@@ -5,22 +5,142 @@ section {
     >div {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         height: 80px;
         width: 100%;
         max-width: 1440px;
-        box-sizing: border-box;
         padding: 0 8px;
-
-        >a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
+        box-sizing: border-box;
 
         >img {
             width: 96px;
             height: 92px;
+        }
+
+        >a {
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+            font-size: 18px;
+        }
+
+        >a.draw-link {
+            svg.circle-svg {
+                position: absolute;
+                top: -33%;
+                left: -62%;
+                width: 220%;
+                height: 160%;
+                pointer-events: none;
+            }
+
+            path {
+                fill: none;
+                stroke: #ffcc33;
+                stroke-width: 4;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-dasharray: 260;
+                stroke-dashoffset: 260;
+                transition: stroke-dashoffset 0.8s ease;
+            }
+
+            &:hover path {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        a.underline-link {
+            position: relative;
+            display: inline-block;
+
+            svg.underline-svg {
+                position: absolute;
+                left: -25%;
+                top: 80%;
+                width: 150%;
+                height: 100%;
+                pointer-events: none;
+
+                path {
+                    fill: none;
+                    stroke: #ffcc33;
+                    stroke-width: 6;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-dasharray: 300;
+                    stroke-dashoffset: 300;
+                    transition: stroke-dashoffset 0.8s ease-out;
+                }
+            }
+
+            &:hover svg.underline-svg path {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        >a.fade-link.diag-link {
+            position: relative;
+            display: inline-block;
+
+            svg.diag-svg {
+                position: absolute;
+                left: -10%;
+                top: 70%;
+                width: 130%;
+                height: 20px;
+                pointer-events: none;
+                transform-origin: left bottom;
+                transform: rotate(-8deg);
+
+                path {
+                    fill: none;
+                    stroke: #ffcc33;
+                    stroke-width: 4;
+                    stroke-linecap: round;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 500;
+                    transition: stroke-dashoffset 0.8s ease-out;
+                }
+            }
+
+            &:hover svg.diag-svg path {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        >a.scale-link {
+            position: relative;
+            display: inline-block;
+
+            svg.scale-svg {
+                position: absolute;
+                left: -25%;
+                top: 30%;
+                width: 150%;
+                height: 30px;
+                pointer-events: none;
+
+                path {
+                    fill: none;
+                    stroke: #ffcc33;
+                    stroke-width: 4;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-dasharray: 400;
+                    stroke-dashoffset: 400;
+                    transition: stroke-dashoffset 0.6s ease-out;
+                }
+            }
+
+            &:hover svg.scale-svg path {
+                stroke-dashoffset: 0;
+            }
         }
     }
 
