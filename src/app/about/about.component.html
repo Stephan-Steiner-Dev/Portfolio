@@ -1,0 +1,15 @@
+<section>
+    <div class="features">
+        <!-- ngFor über data -->
+        <div *ngFor="let item of data; let i = index" class="feature"
+            [style.backgroundImage]="'url(' + item.pathBanner + ')'" [style.zIndex]="data.length - i">
+            <img [src]="item.pathIcon" alt="{{ item.content }}" />
+            <p>{{ item.content }}</p>
+        </div>
+    </div>
+    <div>
+        <div>WHO'S STEPHAN?</div>
+        <div>About me</div>
+        <div></div>
+    </div>
+</section>
