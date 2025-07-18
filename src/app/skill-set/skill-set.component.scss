@@ -1,0 +1,77 @@
+.skill-section {
+    background-image: url('../../assets/images/content/skill-set-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    >div:nth-child(1) {
+        max-width: 1440px;
+        width: 100%;
+        padding: 144px 120px;
+        box-sizing: border-box;
+    }
+
+    >.top-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.top-content img {
+    width: 656px;
+    height: 144px;
+    padding: 32px;
+    gap: 10px;
+}
+
+.section-title {
+    color: white;
+
+    >svg {
+        overflow: visible;
+    }
+}
+
+.skill-set {
+    width: 575px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 8px 16px;
+    }
+}
+
+.skills {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100px;
+    text-align: center;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: flex-end;
+}

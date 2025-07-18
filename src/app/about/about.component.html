@@ -1,23 +1,26 @@
-<section class="about-me">
-    <div class="features">
-        <div *ngFor="let item of data; let i = index" class="feature-{{ i }}"
-            [style.backgroundImage]="'url(' + item.pathBanner + ')'">
-            <div class="banner-text{{ i }}">
-                <img [src]="item.pathIcon" alt="{{ item.content }}" />
-                <p>{{ item.content }}</p>
+<section class="skill-section">
+    <div class="about-me">
+        <div class="features">
+            <div *ngFor="let item of data; let i = index" class="feature-{{ i }}"
+                [style.backgroundImage]="'url(' + item.pathBanner + ')'">
+                <div class="banner-text{{ i }}">
+                    <img [src]="item.pathIcon" alt="{{ item.content }}" />
+                    <p>{{ item.content }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <div>WHO'S STEPHAN?</div>
-        <div>About me</div>
-        <div>Hey, I’m Stephan. I get a real kick out of programming—turning nothing into something cool. Every day I
-            pick up new tools and tricks to write cleaner, more efficient code. At Developer Academy I’ve already gained
-            tons of hands‑on experience, and I can’t wait to tackle fresh challenges and bring creative projects to
-            life!
-        </div>
-        <div>
-            <button>Let's Talk</button>
+        <div class="content">
+            <div>WHO'S STEPHAN?</div>
+            <div>About me</div>
+            <div>Hey, I’m Stephan. I get a real kick out of programming—turning nothing into something cool. Every day I
+                pick up new tools and tricks to write cleaner, more efficient code. At Developer Academy I’ve already
+                gained
+                tons of hands‑on experience, and I can’t wait to tackle fresh challenges and bring creative projects to
+                life!
+            </div>
+            <div>
+                <button>Let's Talk</button>
+            </div>
         </div>
     </div>
 </section>

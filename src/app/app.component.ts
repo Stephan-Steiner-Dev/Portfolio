@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { AboutComponent } from './about/about.component';
+import { SkillSetComponent } from './skill-set/skill-set.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent, HeaderComponent, AboutComponent ],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent, HeaderComponent, AboutComponent, SkillSetComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
