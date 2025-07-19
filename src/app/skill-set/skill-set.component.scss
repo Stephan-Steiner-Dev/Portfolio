@@ -36,7 +36,7 @@
 .top-content img {
     width: 656px;
     height: 144px;
-    padding: 32px;
+    padding: 56px;
     gap: 10px;
 }
 
@@ -53,13 +53,28 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-right: 56px;
 
     >div {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         padding: 8px 16px;
     }
+}
+
+.skill-set img {
+    width: 72px;
+    height: 72px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.skill-set img:hover {
+    filter: grayscale(0%);
+    transform: scale(0.9);
 }
 
 .skills {
@@ -74,4 +89,98 @@
 .bottom-section {
     display: flex;
     justify-content: flex-end;
+}
+
+.sticker-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: rotate(8deg);
+
+    img,
+    .sticker-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s ease;
+    }
+
+    .background {
+        z-index: 1;
+    }
+
+    .middle {
+        z-index: 2;
+    }
+
+    .peel {
+        z-index: 3;
+        transform-origin: top left;
+        transform: rotate(0deg);
+        transition: transform 0.8s ease-in-out, opacity 0.5s ease;
+        pointer-events: auto;
+    }
+
+    .peel.pulled {
+        transform: rotate(-160deg) translate(-100%, -100%);
+        opacity: 0;
+    }
+
+    .sticker-text {
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        font-size: 24px;
+        transition: all 0.6s ease;
+
+        >div {
+            padding: 0 8px;
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    .sticker-text.pulled {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    .arrow {
+        width: 40px !important;
+        height: 40px !important;
+        position: static !important;
+    }
+}
+
+.sticker-icons {
+    display: flex;
+    align-items: space-between;
+
+    >div {
+        padding: 8px 8px 0 8px;
+    }
+}
+
+.text-clicked {
+    font-size: 18px !important;
+    font-style: bold !important;
+    font-weight: 700 !important;
+}
+
+.icon-text-clicked {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.sticker-icon {
+    width: 40px !important;
+    height: 40px !important;
+    position: static !important;
 }

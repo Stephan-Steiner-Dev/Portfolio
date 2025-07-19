@@ -34,8 +34,42 @@
                     <div class="skills">{{ icon.title }}</div>
                 </div>
             </div>
-            <div>
-                <img src="../../assets/images/content/pull-to-peel.png" alt="">
+
+            <div class="pull-container">
+                <!-- <div class="pull-to-peel">
+                    <div class="pull-to-peel-content">
+                        <img src="../../assets/images/content/pull-to-peel-arrow.png" alt="arrow">
+                        <div>Pull to peel</div>
+                    </div>
+                </div> -->
+                <div class="sticker-wrapper" (click)="peelOff()" (mouseenter)="onHoverStart()"
+                    (mouseleave)="onHoverEnd()">
+                    <img class="background" [src]="bgImage" alt="">
+                    <img class="middle" [src]="middleImage" alt="">
+                    <img class="peel" [src]="peelImage" alt="" [class.pulled]="peeled" />
+
+                    <div class="sticker-text" [class.pulled]="peeled">
+                        <ng-container *ngIf="!peeled && !hovering && !clicked">
+                            <img class="arrow" src="../../assets/images/content/pull-to-peel-arrow.png"
+                                alt="Zieh mich ab!" />
+                            <div class="text">Pull to peel</div>
+                        </ng-container>
+                        <ng-container  *ngIf="clicked">
+                            <div class="text-clicked">Also, I'm interested in diving into:</div>
+                            <div class="sticker-icons">
+                                <div>
+                                    <img class="sticker-icon" src="../../assets/icons/react.png" alt="" />
+                                    <div class="icon-text-clicked">React</div>
+                                </div>
+                                <div>
+                                    <img class="sticker-icon" src="../../assets/icons/vue-js.png" alt="" />
+                                    <div class="icon-text-clicked">Vue Js</div>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
