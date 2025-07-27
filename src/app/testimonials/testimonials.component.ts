@@ -1,12 +1,32 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent {
+  comments = [
+    {
+      'comment': `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Nesciunt dolor pariatur molestias quas fuga odit ex id facere optio.
+                        Incidunt optio blanditiis quas in deleniti praesentium fuga soluta fugiat illum.`,
+      'name': 'Jack',
+      'profession': 'Frontend Developer'
+    },
+    {
+      'comment': 'Big thinker',
+      'name': 'Reacher',
+      'profession': 'Frontend Developer'
+    },
+    {
+      'comment': 'What a man',
+      'name': 'Jason',
+      'profession': 'Frontend Developer'
+    }
+  ]
 
 }

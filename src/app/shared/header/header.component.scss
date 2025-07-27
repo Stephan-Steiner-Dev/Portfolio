@@ -45,8 +45,8 @@ section {
                 stroke-width: 4;
                 stroke-linecap: round;
                 stroke-linejoin: round;
-                stroke-dasharray: 260;
-                stroke-dashoffset: 260;
+                stroke-dasharray: 500;
+                stroke-dashoffset: 500;
                 transition: stroke-dashoffset 0.8s ease;
             }
 
@@ -70,11 +70,11 @@ section {
                 path {
                     fill: none;
                     stroke: #ffcc33;
-                    stroke-width: 6;
+                    stroke-width: 8;
                     stroke-linecap: round;
                     stroke-linejoin: round;
-                    stroke-dasharray: 300;
-                    stroke-dashoffset: 300;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 500;
                     transition: stroke-dashoffset 0.8s ease-out;
                 }
             }
@@ -101,7 +101,7 @@ section {
                 path {
                     fill: none;
                     stroke: #ffcc33;
-                    stroke-width: 4;
+                    stroke-width: 6;
                     stroke-linecap: round;
                     stroke-dasharray: 500;
                     stroke-dashoffset: 500;
@@ -129,11 +129,11 @@ section {
                 path {
                     fill: none;
                     stroke: #ffcc33;
-                    stroke-width: 4;
+                    stroke-width: 3;
                     stroke-linecap: round;
                     stroke-linejoin: round;
-                    stroke-dasharray: 400;
-                    stroke-dashoffset: 400;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 500;
                     transition: stroke-dashoffset 0.6s ease-out;
                 }
             }

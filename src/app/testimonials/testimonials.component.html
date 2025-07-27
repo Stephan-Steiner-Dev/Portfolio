@@ -1,1 +1,27 @@
-<p>testimonials works!</p>
+<section class="testimonials">
+    <div>
+        <div class="upper-content">
+            <div class="arrow-text">
+                <img src="../../assets/images/content/testimonials-arrow.png" alt="arrow">
+                <div>IN THEIR WORDS:</div>
+            </div>
+            <div class="colleagues-headline">
+                Colleagues' Thoughts
+            </div>
+        </div>
+        <div class="lower-content">
+            <div class="notice" [ngClass]="" *ngFor="let item of comments">
+                <div>
+                    <div>{{ item.comment }}</div>
+                </div>
+                <div>
+                    <div>
+                        <div>{{ item.name }}</div>
+                        <div>{{ item.profession }}</div>
+                    </div>
+                    <img src="../../assets/images/content/testimonials-linked-in-black.png" alt="linkedIN">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
