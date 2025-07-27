@@ -1,1 +1,38 @@
-<p>projects works!</p>
+<section class="project-section">
+    <div class="projects-grid">
+        <div class="title-container">
+            <div>MY CRAFT</div>
+            <div>
+                <div class="headline">Projects
+                    <img class="underline" src="../../assets/icons/underline-projects.png" alt="underline">
+                </div>
+            </div>
+            <div>Encourage people to take a look and interact with your projects.
+                Highlight your approach to creating responsive,
+                user-friendly projects with efficient code.</div>
+        </div>
+
+        <div *ngFor="let project of projectsData; let i = index" class="project-item">
+            <div class="image-wrapper{{i}}" (mouseenter)="onHoverStart(i)" (mouseleave)="onHoverEnd()">
+
+                <div class="floater{{i}}">
+                    <img [src]="project.img[0]" [alt]="project.name" [ngClass]="'image' + i" />
+                </div>
+
+                <img *ngIf="i === 0" class="featured-project-icon" src="../../assets/icons/featured-project.png"
+                    alt="Featured Project">
+
+                <button class="projects-btn" 
+                *ngIf="hoveredIndex === i"
+                [class.first-btn]="i === 0">
+                    Project details
+                </button>
+            </div>
+
+            <div>
+                <div class="project-names">{{project.name}}</div>
+                <div>{{project.content}}</div>
+            </div>
+        </div>
+    </div>
+</section>

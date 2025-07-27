@@ -5,11 +5,18 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { AboutComponent } from './about/about.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent, HeaderComponent, AboutComponent, SkillSetComponent ],
+  imports: [CommonModule,
+    RouterOutlet,
+    LandingPageComponent,
+    HeaderComponent,
+    AboutComponent,
+    SkillSetComponent,
+    ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
