@@ -1,6 +1,6 @@
 .skill-section {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .about-me {
@@ -134,31 +134,66 @@ justify-content: center;
 }
 
 .content {
-    height: 100%;
-    width: 50%;
+    height: 432px;
+    width: 560px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: space-around;
     flex-direction: column;
 
     >div:nth-child(1) {
-        gap: 4px;
-        font-size: 20px;
-        font-weight: 500;
+        >div:nth-child(1) {
+            gap: 4px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        div:nth-child(2) {
+            position: relative;
+            gap: 4px;
+            font-size: 64px;
+            font-weight: bold;
+            padding-bottom: 16px;
+        }
+
+        div:nth-child(2)>img {
+            position: absolute;
+            bottom: 4px;
+            left: -8px;
+            width: 303px;
+            height: 20px;
+
+            mask-image: linear-gradient(to right, black 0%, black 100%);
+            -webkit-mask-image: linear-gradient(to right, black 0%, black 100%);
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 200% 100%;
+            -webkit-mask-size: 200% 100%;
+
+            animation: draw-line 2s ease-in-out infinite alternate;
+        }
+    }
+
+    @keyframes draw-line {
+        0% {
+            mask-position: 200% 0;
+            -webkit-mask-position: 200% 0;
+        }
+
+        100% {
+            mask-position: 0 0;
+            -webkit-mask-position: 0 0;
+        }
     }
 
     >div:nth-child(2) {
-        gap: 4px;
-        font-size: 64px;
-        font-weight: bold;
+        >div:nth-child(1) {
+            font-size: 20px;
+            font-weight: 400;
+        }
     }
 
     >div:nth-child(3) {
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    >div:nth-child(4) {
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -192,6 +227,4 @@ justify-content: center;
             }
         }
     }
-
-
 }
