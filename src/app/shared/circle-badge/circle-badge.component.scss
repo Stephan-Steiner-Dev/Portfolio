@@ -1,0 +1,45 @@
+.circle-badge {
+    position: relative;
+    width: 168px;
+    height: 168px;
+
+    // Hintergrundbild füllt den Container
+    .badge-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    // SVG mit rundem Text ebenfalls absolut
+    .badge-text {
+        box-sizing: border-box;
+        padding: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible; // verhindert Abschneiden
+    }
+
+    .circle-text {
+         font-family: 'BricolageGrotesque';
+        font-weight: bold;
+        font-size: 14.7px;
+    }
+
+    // Logo in der Mitte (hier 50% des Containers, zentriert)
+    .badge-logo {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        top: 15%; // (100%−50%)/2
+        left: 15%;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) invert(0%) sepia(98%) saturate(11%) hue-rotate(351deg) brightness(98%) contrast(100%);
+    }
+}

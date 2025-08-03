@@ -1,0 +1,26 @@
+<div class="circle-badge">
+  <!-- Hintergrundkreis (z.B. orangenes Rauschen) -->
+  <img class="badge-bg" [src]="bgImage" alt="Circle Background">
+
+  <!-- SVG mit Text auf Kreis -->
+  <svg class="badge-text" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Kreis-Pfad: Radius 90, zentriert bei (100/100) -->
+      <path id="text-circle"
+            d="M100,100
+               m0,-90
+               a90,90 0 1,1 0,180
+               a90,90 0 1,1 0,-180" />
+    </defs>
+    <text font-size="12" font-family="Arial, sans-serif" fill="#3c1f0b">
+      <textPath class="circle-text" xlink:href="#text-circle"
+                startOffset="0%">
+        {{ circleText }}
+      </textPath>
+    </text>
+  </svg>
+
+  <!-- Mittiges HK-Logo -->
+  <img class="badge-logo" [src]="logoImage" alt="HK Logo">
+</div>
+

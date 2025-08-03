@@ -1,14 +1,35 @@
 <section class="form">
-    <form (ngSubmit)="onSubmit()">
-        <label for="name"></label>
-        <input [(ngModel)]="contactData.name" type="name" id="name" name="name" placeholder="Your name...">
+    <app-circle-badge class="logo"></app-circle-badge>
+    <form class="input-div" (ngSubmit)="onSubmit()">
+        <div>
+            <div class="name-container">
+                <label for="name">What's your name?</label>
+                <input [(ngModel)]="contactData.name" type="name" id="name" name="name" placeholder="Your name...">
+            </div>
 
-        <label for="email"></label>
-        <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="YourEmail@email.com...">
+            <div class="email-container">
+                <label for="email">What's your email?</label>
+                <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="YourEmail@email.com...">
+            </div>
 
-        <label for="message"></label>
-        <textarea [(ngModel)]="contactData.message" name="message" id="message"></textarea>
+            <div class="message-container">
+                <label for="message">How can I help you?</label>
+                <textarea [(ngModel)]="contactData.message" name="message" id="message"
+                    placeholder="Hello Stephan, I am interested in..."></textarea>
+            </div>
+        </div>
 
-        <input type="submit" value="Submit">
+        <div class="checkbox-container">
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">I've read the privacy policy and agree to the processing of my data as
+                    outlined.</label>
+                <div class="d-none">Please accept the privacy policy.</div>
+            </div>
+            <input type="submit" value="Submit">
+        </div>
+
+
     </form>
 </section>
