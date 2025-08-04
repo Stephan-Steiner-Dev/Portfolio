@@ -1,19 +1,22 @@
-<section class="contact">
-    <div class="contact-container">
-        <div class="left-content" *ngFor="let item of content">
-            <div>
-                <div>{{item.headline}}</div>
-                <div>{{item.subHeadline}}</div>
+<section class="section-contact">
+    <div class="contact">
+        <div class="contact-container">
+            <div class="left-content" *ngFor="let item of content">
+                <div>
+                    <div>{{item.headline}}</div>
+                    <div>{{item.subHeadline}}</div>
+                </div>
+                <div>
+                    <div [innerHTML]="item.contactText"></div>
+                </div>
+                <div class="arrow-container">
+                    <img [src]="item.img" class="arrow" alt="arrow">
+                </div>
             </div>
-            <div>
-                <div [innerHTML]="item.contactText"></div>
+            <div class="right-content">
+                <app-formfield></app-formfield>
             </div>
-            <div class="arrow-container">
-                <img [src]="item.img" class="arrow" alt="arrow">
-            </div>
-        </div>
-        <div class="right-content">
-            <app-formfield></app-formfield>
         </div>
     </div>
+    <app-footer></app-footer>
 </section>

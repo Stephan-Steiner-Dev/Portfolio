@@ -1,0 +1,35 @@
+.footer {
+    height: 132px;
+    display: flex;
+    justify-content: center;
+
+    >div {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.icon-container {
+    margin-bottom: 24px;
+    >img {
+        height: 96px;
+        width: 92px;
+    }
+
+    >div {
+        margin-bottom: -16px;
+        color: white;
+    }
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    >a {
+        color: white;
+        text-decoration: none;
+    }
+}

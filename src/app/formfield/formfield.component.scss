@@ -1,10 +1,12 @@
 .form {
     color: white;
+    box-sizing: border-box;
     padding-top: 128px;
-    display:flex;
+    display: flex;
     align-items: space-between;
     height: 560px;
     position: relative;
+
     >.logo {
         position: absolute;
         right: 0;
@@ -13,7 +15,7 @@
     }
 
     >.input-div {
-
+        gap: 40px;
         height: 271px;
         width: 480px;
         display: flex;
@@ -51,8 +53,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            >div{
-                height:121px;
+
+            >div {
+                height: 121px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
             }
         }
     }
@@ -112,12 +118,16 @@ input[type="checkbox"] {
     font-size: 15px;
     line-height: 120%;
     font-weight: 400;
-    width: 18px;
-    height: 18px;
+    width: 18px !important;
+    height: 18px !important;
     background-color: transparent;
     cursor: pointer;
     transition: transform 0.2s ease;
     overflow: visible;
+}
+
+.checkbox-label {
+    margin-left: 4px;
 }
 
 input[type="checkbox"]:active {
@@ -127,10 +137,10 @@ input[type="checkbox"]:active {
 input[type="checkbox"]::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 18px !important;
+    height: 18px !important;
     border: 2px solid blue;
     border-radius: 4px;
     background: transparent;
@@ -140,18 +150,17 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]::after {
     content: "";
-    margin-top: 8px;
     position: absolute;
     top: 0px;
     left: 2px;
     width: 18px;
     height: 18px;
     background-image: url("data:image/svg+xml;utf8,\
-<svg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'>\
-<path d='M2 9 L6 16 C8 15 11 5 16 2' \
-stroke='%23F6C418' stroke-width='2' fill='none' \
-stroke-linecap='round' stroke-linejoin='round'/>\
-</svg>");
+        <svg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'>\
+        <path d='M2 9 L6 16 C8 15 11 5 16 2' \
+        stroke='%23F6C418' stroke-width='2' fill='none' \
+        stroke-linecap='round' stroke-linejoin='round'/>\
+        </svg>");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -188,5 +197,5 @@ input[type="checkbox"]:focus::before {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }

@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormfieldComponent } from '../formfield/formfield.component';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
   imports: [CommonModule,
-    FormfieldComponent
+    FormfieldComponent,
+    FooterComponent
   ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
