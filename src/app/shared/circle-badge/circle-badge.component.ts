@@ -11,6 +11,6 @@ export class CircleBadgeComponent {
   circleText = 'Stephan Steiner - Frontend Developer - Stephan Steiner - Frontend Developer -';
 
   // Pfade zu Deinen Bildern
-  bgImage = '../../assets/images/content/testimonials-background(2).png';
-  logoImage = '../../assets/icons/my-icon.png';
+  bgImage = 'assets/images/content/testimonials-background(2).png';
+  logoImage = 'assets/icons/my-icon.png';
 }

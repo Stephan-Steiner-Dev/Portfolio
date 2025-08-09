@@ -2,6 +2,8 @@
     height: 132px;
     display: flex;
     justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
 
     >div {
         width: 1200px;
@@ -11,10 +13,16 @@
 }
 
 .icon-container {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
+
     >img {
         height: 96px;
         width: 92px;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(3902%) hue-rotate(345deg) brightness(98%) contrast(98%);
+        }
     }
 
     >div {
@@ -27,9 +35,85 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    >a {
+    >div {
+        >a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.legal-notice-link {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    .underline {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        width: 100%;
+        height: 20px;
+
+        path {
+            fill: none;
+            stroke: #F6C418;
+            stroke-width: 2;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            transition: stroke-dashoffset 0.8s ease-in-out;
+        }
+    }
+
+    &:hover .underline path {
+        stroke-dashoffset: 0;
+    }
+}
+
+.blue-btn {
+    display: inline-block;
+    position: relative;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
         color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
         text-decoration: none;
+        font-weight: 500;
+        overflow: hidden;
+        position: relative;
+        overflow: visible;
+
+
+        img {
+            position: absolute;
+            bottom: 48px;
+            right: 50%;
+            opacity: 0;
+            width: 32px;
+            height: 32px;
+            transform: translateX(50%) rotate(360deg);
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            background-color: #1f51ff;
+        }
+
+        &:hover img {
+            right: 0px;
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

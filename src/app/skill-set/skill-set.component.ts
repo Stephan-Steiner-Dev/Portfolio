@@ -12,43 +12,43 @@ export class SkillSetComponent {
   icons = [
     {
       'title': 'HTML',
-      'url': '../../assets/icons/HTML-icon.png',
+      'url': 'assets/icons/HTML-icon.png',
     },
     {
       'title': 'CSS',
-      'url': '../../assets/icons/CSS-icon.png',
+      'url': 'assets/icons/CSS-icon.png',
     },
     {
       'title': 'JavaScript',
-      'url': '../../assets/icons/JS-icon.png',
+      'url': 'assets/icons/JS-icon.png',
     },
     {
       'title': 'TypeScript',
-      'url': '../../assets/icons/TS-icon.png',
+      'url': 'assets/icons/TS-icon.png',
     },
     {
       'title': 'Angular',
-      'url': '../../assets/icons/Angular-icon.png',
+      'url': 'assets/icons/Angular-icon.png',
     },
     {
       'title': 'Firebase',
-      'url': '../../assets/icons/Firebase-icon.png',
+      'url': 'assets/icons/Firebase-icon.png',
     },
     {
       'title': 'Git',
-      'url': '../../assets/icons/Git-icon.png',
+      'url': 'assets/icons/Git-icon.png',
     },
     {
       'title': 'REST-API',
-      'url': '../../assets/icons/API-icon.png',
+      'url': 'assets/icons/API-icon.png',
     },
     {
       'title': 'Scrum',
-      'url': '../../assets/icons/SCRUM-icon.png',
+      'url': 'assets/icons/SCRUM-icon.png',
     },
     {
       'title': 'Material Design',
-      'url': '../../assets/icons/Material-Design-icon.png',
+      'url': 'assets/icons/Material-Design-icon.png',
     }
   ]
 
@@ -56,17 +56,17 @@ export class SkillSetComponent {
   peeledText = 'Überraschung!';
 
 
-  bgImage = '../../assets/images/content/pull-to-peel-click.png';
-  middleImage = '../../assets/images/content/pull-to-peel-hover.png';
+  bgImage = 'assets/images/content/pull-to-peel-click.png';
+  middleImage = 'assets/images/content/pull-to-peel-hover.png';
 
   peeled = false;
   hovering = false;
   clicked = false;
 
   get peelImage(): string {
-    if (this.clicked) return '../../assets/images/content/pull-to-peel-click.png';
-    if (this.hovering) return '../../assets/images/content/pull-to-peel-hover.png';
-    return '../../assets/images/content/pull-to-peel.png';
+    if (this.clicked) return 'assets/images/content/pull-to-peel-click.png';
+    if (this.hovering) return 'assets/images/content/pull-to-peel-hover.png';
+    return 'assets/images/content/pull-to-peel.png';
   }
 
   onHoverStart() {
