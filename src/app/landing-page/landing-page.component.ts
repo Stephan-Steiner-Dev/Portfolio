@@ -1,20 +1,27 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { AboutComponent } from '../about/about.component';
+import { SkillSetComponent } from '../skill-set/skill-set.component';
+import { ProjectsComponent } from '../projects/projects.component';
+import { TestimonialsComponent } from '../testimonials/testimonials.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component'
+import { HeaderComponent } from '../shared/header/header.component';
+import { AboveTheFoldComponent } from '../above-the-fold/above-the-fold.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [AboutComponent,
+    SkillSetComponent,
+    ProjectsComponent,
+    TestimonialsComponent,
+    ContactFormComponent,
+    HeaderComponent,
+    AboveTheFoldComponent
+  ],
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrl: './landing-page.component.scss'
 })
-export class LandingPageComponent {
-  firstPart = 'Frontend';
-  secondPart = 'DEVELOPER';
 
-  get firstLetters() { return this.firstPart.split(''); }
-  get secondLetters() { return this.secondPart.split(''); }
-  constructor(){
-    console.log()
-  }
+export class LandingPageComponent {
+
 }

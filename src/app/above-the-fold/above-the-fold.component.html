@@ -1,0 +1,46 @@
+<section class="section-main">
+    <div class="above-the-fold">
+        <div class="upper-half">
+            <div class="top-left">
+                <button class="btn">
+                    <span class="btn__text btn__text--default">Hello world</span>
+                    <span class="btn__text btn__text--hover">I’M STEPHAN STEINER</span>
+                    <img src="../../../../assets/images/content/waving_hand.png" alt="👋" class="btn__icon">
+                </button>
+                <div>
+                    <ng-container *ngFor="let char of firstLetters; let i = index">
+                        <span class="letter" [ngClass]="char === char.toLowerCase() ? 'lower' : 'upper'">
+                            {{ char }}
+                        </span>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="user-image-div">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="lower-half">
+            <div class="bottom-div">
+                <ng-container *ngFor="let char of secondLetters; let i = index">
+                    <span class="letter" [ngClass]="char === char.toLowerCase() ? 'lower' : 'upper'">
+                        {{ char }}
+                    </span>
+                </ng-container>
+            </div>
+            <button>Get in Touch</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <a href="#">
+            <img src="../../assets/icons/linkedIn-icon.png" alt="linkedIn">
+        </a>
+        
+        <a href="#">
+            <img src="../../assets/icons/github-icon.png" alt="gitHub">
+        </a>
+        
+        <a href="#">
+            <img src="../../assets/icons/mail-icon.png" alt="mail">
+        </a>
+    </div>
+</section>
