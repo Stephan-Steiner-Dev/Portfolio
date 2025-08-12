@@ -22,7 +22,8 @@
                 <img *ngIf="i === 0" class="featured-project-icon" src="../../assets/icons/featured-project.png"
                     alt="Featured Project">
 
-                <button class="projects-btn" 
+                <button class="projects-btn"
+                (click)="showDetails(i)"
                 *ngIf="hoveredIndex === i"
                 [class.first-btn]="i === 0">
                     Project details

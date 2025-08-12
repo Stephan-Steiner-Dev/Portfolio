@@ -1,0 +1,100 @@
+  .pollo-locco {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 80px;
+      background-image: url('../../../../assets/images/projects-page/pollo-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+  }
+
+  .locco-content {
+      box-sizing: border-box;
+      display: flex;
+      max-width: 1440px;
+      width: 100%;
+      padding: 0 120px;
+      justify-content: around;
+      height: 512px;
+  }
+
+  .left {
+      width: 488px;
+      height: 512px;
+  }
+
+  .go-back {
+      font-weight: bold;
+      z-index: 10;
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+      text-decoration: underline;
+      text-decoration-color: blue;
+      text-decoration-thickness: 3px;
+  }
+
+  h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+  }
+
+  p {
+      max-width: 400px;
+  }
+
+  .duration {
+      margin-top: 1rem;
+      font-weight: bold;
+  }
+
+  .tech-icons img {
+      height: 24px;
+      margin-right: 0.5rem;
+  }
+
+  /* Right side */
+  .right {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .game-image {
+      border-radius: 15px;
+      overflow: hidden;
+      height: 398.22px;
+      width: 560px;
+      margin-bottom: 2rem;
+  }
+
+  .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  }
+
+  .buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+  }
+
+  .next-project {
+      color: white;
+      margin-top: auto;
+      font-weight: bold;
+  }

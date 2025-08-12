@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { log } from 'node:console';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +10,8 @@ import { log } from 'node:console';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  constructor(private router: Router) { }
+
   projectsData = [{
     'img': ['assets/images/content/Laptop(1).png', 'assets/images/content/Laptop(2).png'],
     'name': 'Join',
@@ -41,6 +43,12 @@ export class ProjectsComponent {
   onHoverEnd() {
     this.hoveredIndex = null;
     this.hover = false;
+  }
+
+  showDetails(i: number) {
+    if (i == 0) {
+      this.router.navigate(['/el-pollo-locco']);
+    }
   }
 }
 
