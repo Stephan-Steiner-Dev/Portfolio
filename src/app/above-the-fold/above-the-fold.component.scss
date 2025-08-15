@@ -1,11 +1,14 @@
 .section-main {
-    height: 100vh;
+    min-height: 105vh;
+    height: 900px;
     width: 100%;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-top: 184px;
+    box-sizing: border-box;
 }
 
 .above-the-fold {
