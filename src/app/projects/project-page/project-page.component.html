@@ -1,0 +1,47 @@
+<section class="project">
+    <div class="height">
+        <div class="back-container">
+            <div class="go-back" (click)="goBack()"><img src="../../../assets/images/projects-page/orange-arrow.png" alt="back-arrow">
+                GoBack
+            </div>
+        </div>
+        <div class="locco-content">
+            <div class="left">
+                <div class="game-title">
+                    <h1>{{ sharedData.projectData[sharedData.projectPageIndex].projectName }} </h1>
+                    <img src="../../../assets/images/projects-page/blue-underline.png" alt="">
+                </div>
+                <div class="description">
+                    <h2>{{ sharedData.projectData[sharedData.projectPageIndex].headline }}</h2>
+                    <p>{{ sharedData.projectData[sharedData.projectPageIndex].descriptionText }}</p>
+                    <h2>{{ sharedData.projectData[sharedData.projectPageIndex].subheadline }}</h2>
+                    <p>{{ sharedData.projectData[sharedData.projectPageIndex].detailText }}</p>
+
+                    <div class="duration">{{ sharedData.projectData[sharedData.projectPageIndex].duration }}</div>
+                    <div class="tech-icons">
+                        <div *ngFor="let icon of sharedData.projectData[sharedData.projectPageIndex].icons" >
+                        <img class="icons" [src]="icon.src" alt="JavaScript">{{ icon.label }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="game-image">
+                    <img class="game-screenshot" [src]="sharedData.projectData[sharedData.projectPageIndex].image"
+                        alt="Game Screenshot">
+                </div>
+                <div class="btn-container">
+                    <div class="buttons">
+                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectGitHub }}" target="_blank">GitHub</a>
+                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectUrl }}" target="_blank">Live Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-container">
+            <div class="next-project" (click)="goForward()">Next Project <img src="../../../assets/images/projects-page/yellow-arrow.png"
+                    alt="arrow-next"></div>
+        </div>
+    </div>
+</section>

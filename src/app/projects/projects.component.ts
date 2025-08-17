@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { SharedDataService } from '../../app/shared/shared-data.service';
+
 
 @Component({
   selector: 'app-projects',
@@ -10,26 +12,25 @@ import { Router } from '@angular/router';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router, public sharedData: SharedDataService) { }
 
   projectsData = [{
-    'img': ['assets/images/content/Laptop(1).png', 'assets/images/content/Laptop(2).png'],
+    'img': 'assets/images/content/Laptop(1).png',
     'name': 'Join',
     'content': `Task manager inspired by the Kanban System.
                 Create and organize tasks using drag and drop functions,
                 assign users and categories.`
   },
   {
-    'img': ['assets/images/content/Pollo.png', 'assets/images/content/Pollo(1).png'],
+    'img': 'assets/images/content/Pollo.png',
     'name': 'El Pollo Locco',
     'content': `Jump, run and throw game based on object-oriented approach.
                 Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`
   },
   {
-    'img': ['assets/images/content/DABubble.png', 'assets/images/content/DABubbleL(1).png'],
-    'name': 'DABubble',
-    'content': `This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface,
-                real-time messaging, and robust channel organization.`
+    'img': 'assets/images/content/pokedex.png',
+    'name': 'Pokedex',
+    'content': `An app with complete data on all Pokemon. It has a search function and many other features.`
   }]
 
   hover: boolean = false;
@@ -46,8 +47,9 @@ export class ProjectsComponent {
   }
 
   showDetails(i: number) {
-    if (i == 0) {
-      this.router.navigate(['/el-pollo-locco']);
+    if (i < 3) {
+      this.router.navigate(['/projects-page']);
+      this.sharedData.projectPageIndex = i
     }
   }
 }

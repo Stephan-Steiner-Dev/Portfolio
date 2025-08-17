@@ -1,4 +1,4 @@
-  .pollo-locco {
+  .project {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -7,7 +7,7 @@
       width: 100%;
       min-height: 100vh;
       padding-top: 80px;
-      background-image: url('../../../../assets/images/projects-page/pollo-bg.png');
+      background-image: url('../../../assets/images/projects-page/pollo-bg.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -68,6 +68,13 @@
                           align-items: center;
                           padding-top: 32px;
                           gap: 8px;
+
+                          >div {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-right: 8px;
+                          }
                       }
                   }
 
@@ -188,10 +195,6 @@
 
       }
   }
-
-  // .buttons a:nth-child(1) {
-
-  // }
 
   .next-container {
       width: 100%;

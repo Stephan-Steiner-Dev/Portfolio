@@ -16,7 +16,7 @@
             <div class="image-wrapper{{i}}" (mouseenter)="onHoverStart(i)" (mouseleave)="onHoverEnd()">
 
                 <div class="floater{{i}}">
-                    <img [src]="project.img[0]" [alt]="project.name" [ngClass]="'image' + i" />
+                    <img [src]="project.img" [alt]="project.name" [ngClass]="'image' + i" />
                 </div>
 
                 <img *ngIf="i === 0" class="featured-project-icon" src="../../assets/icons/featured-project.png"
