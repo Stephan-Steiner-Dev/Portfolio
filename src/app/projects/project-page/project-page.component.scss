@@ -70,16 +70,17 @@
                           gap: 8px;
 
                           >div {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding-right: 8px;
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              padding-right: 8px;
                           }
                       }
                   }
 
                   >.game-title {
                       position: relative;
+                      width: fit-content;
 
                       >h1 {
                           font-size: 64px;
@@ -87,10 +88,13 @@
 
                       >img {
                           position: absolute;
+                          left: -8px;
                           bottom: 26%;
-                          width: 388px;
+                          width: 115%;
                           height: 20px;
-                          ;
+
+
+                animation: line-mask 5s infinite;
                       }
                   }
 
@@ -111,6 +115,37 @@
           }
       }
   }
+
+
+@keyframes line-mask {
+  /* Start – unsichtbar (Pause links) */
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  20% {
+    clip-path: inset(0 100% 0 0); /* hält etwas länger links */
+  }
+
+  /* Zeichnen nach rechts */
+  40% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Pause rechts */
+  60% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Zurückziehen */
+  80% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  /* Pause links (Ende = wieder Startzustand) */
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
 
   .icons {
       height: 24px;

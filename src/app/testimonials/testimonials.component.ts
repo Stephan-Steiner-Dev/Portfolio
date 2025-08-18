@@ -18,7 +18,7 @@ export class TestimonialsComponent {
       'profession': 'Frontend Developer'
     },
     {
-      'comment': 'Big thinker',
+      'comment': 'Ich habe mit Stephan im Projekt (Join) zusammengearbeitet und ihn dabei als sehr verlässlichen Teamkollegen erlebt. Man konnte sich immer darauf verlassen, dass er seine Aufgaben zuverlässig erledigt. Besonders schätze ich auch seinen sauberen, gut strukturierten Code, damit war die Zusammenarbeit im Team deutlich einfacher und angenehmer.',
       'name': 'Reacher',
       'profession': 'Frontend Developer'
     },
