@@ -1,0 +1,54 @@
+.imprint {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+
+    >.bg-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 439px;
+        background-image: url('../../assets/images/content/skill-set-bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        >.headline {
+            max-width: 1440px;
+            width: 100%;
+            padding-left: 120px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+h1 {
+
+    font-size: 64px;
+    font-style: bold;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.source {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: gray;
+}

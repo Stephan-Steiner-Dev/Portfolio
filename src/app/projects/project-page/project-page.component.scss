@@ -118,30 +118,21 @@
 
 
 @keyframes line-mask {
-  /* Start – unsichtbar (Pause links) */
   0% {
     clip-path: inset(0 100% 0 0);
   }
   20% {
-    clip-path: inset(0 100% 0 0); /* hält etwas länger links */
+    clip-path: inset(0 100% 0 0);
   }
-
-  /* Zeichnen nach rechts */
   40% {
     clip-path: inset(0 0 0 0);
   }
-
-  /* Pause rechts */
   60% {
     clip-path: inset(0 0 0 0);
   }
-
-  /* Zurückziehen */
   80% {
     clip-path: inset(0 100% 0 0);
   }
-
-  /* Pause links (Ende = wieder Startzustand) */
   100% {
     clip-path: inset(0 100% 0 0);
   }
