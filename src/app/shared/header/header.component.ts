@@ -19,4 +19,20 @@ export class HeaderComponent {
     this.currentLang = lang;
     // Hier kannst du später z. B. einen Translate-Service aufrufen
   }
+
+toHomeSection() {
+  const goTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
+  const isHome =
+    this.router.url === '/' ||
+    this.router.url === '' ||
+    this.router.url.startsWith('/#');
+
+  if (isHome) {
+    goTop();
+  } else {
+    this.router.navigate(['/']).then(() => goTop());
+  }
+}
+
 }

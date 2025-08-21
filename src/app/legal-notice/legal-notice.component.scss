@@ -1,6 +1,4 @@
 .imprint {
-    margin: 0;
-
     display: flex;
     flex-direction: column;
     overflow: visible;
@@ -10,7 +8,7 @@
         align-items: center;
         justify-content: center;
         height: 439px;
-        background-image: url('../../assets/images/content/skill-set-bg.png');
+        background-image: url('../../assets/images/content/above-the-fold-bg.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
@@ -35,11 +33,17 @@ h1 {
 h2 {
     margin-top: 2rem;
     font-size: 1.5rem;
+    color: blue;
 }
 
 h3 {
     margin-top: 1.2rem;
     font-size: 1.2rem;
+    color: blue;
+}
+
+.color-blue {
+    color: blue;
 }
 
 p {
@@ -51,4 +55,23 @@ p {
     font-size: 0.9rem;
     margin-top: 2rem;
     color: gray;
+}
+
+.main-part {
+    display: flex;
+    justify-content: center;
+    >.imprint-content {
+        max-width: 1440px;
+        padding: 0 120px;
+        box-sizing: border-box;
+        // display: flex;
+        // flex-direction: column;
+    }
+}
+
+.footer {
+    background-image: url('../../assets/images/content/footer-bg.png');
+    height: 250px;
+    padding-top: 40px;
+    box-sizing: border-box;
 }

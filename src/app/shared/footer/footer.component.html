@@ -1,12 +1,12 @@
 <section class="footer">
     <div>
         <div class="icon-container">
-            <img src="../../../assets/icons/my-icon.png" alt="">
+            <img (click)="toHomeSection()" src="../../../assets/icons/my-icon.png" alt="">
             <div>© Stephan Steiner 2025</div>
         </div>
         <div class="links">
             <div class="legal-notice-link">
-                <a [routerLink]="'/legal-notice'">Legal Notice <svg class="underline" viewBox="0 0 40 20" preserveAspectRatio="none">
+                <a (click)="toLegalNotice()">Legal Notice <svg class="underline" viewBox="0 0 40 20" preserveAspectRatio="none">
                         <path d="M0,16 Q10,10 20,13 Q15,20 20,17 Q25,15 40,12" />
                     </svg>
                 </a>
@@ -20,7 +20,6 @@
                 <a href="#">LinkedIn
                     <img src="../../../assets/icons/linkedIn-icon.png" alt="GitHub Logo" />
                 </a>
-
             </div>
             <div class="blue-btn">
                 <a href="mailto:stephan-steiner-dev@proton.de">Email
