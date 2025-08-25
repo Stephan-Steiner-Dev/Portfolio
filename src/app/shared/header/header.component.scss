@@ -1,206 +1,10 @@
-// section {
-//     display: flex;
-//     justify-content: center;
-//     position: absolute;
-//     width: 100%;
-
-//     >div {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         height: 80px;
-//         width: 100%;
-//         max-width: 1440px;
-//         padding: 19px 72px;
-//         box-sizing: border-box;
-
-//         >img {
-//             width: 96px;
-//             height: 92px;
-//             cursor: pointer;
-
-//             &:hover {
-//                 filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(3902%) hue-rotate(345deg) brightness(98%) contrast(98%);
-//             }
-//         }
-
-//         >a {
-//             box-sizing: border-box;
-//             position: relative;
-//             display: inline-block;
-//             color: white;
-//             text-decoration: none;
-//             font-weight: bold;
-//             font-size: 20px;
-//             transition: color 0.3s;
-//             font-size: 18px;
-//         }
-
-//         >a.about-me {
-//             svg.about-me-svg {
-//                 position: absolute;
-//                 top: -33%;
-//                 left: -62%;
-//                 width: 220%;
-//                 height: 160%;
-//                 pointer-events: none;
-//             }
-
-//             path {
-//                 fill: none;
-//                 stroke: #ffcc33;
-//                 stroke-width: 4;
-//                 stroke-linecap: round;
-//                 stroke-linejoin: round;
-//                 stroke-dasharray: 500;
-//                 stroke-dashoffset: 500;
-//                 transition: stroke-dashoffset 0.8s ease;
-//             }
-
-//             &:hover path {
-//                 stroke-dashoffset: 0;
-//             }
-//         }
-
-//         a.skill {
-//             position: relative;
-//             display: inline-block;
-
-//             svg.skill-svg {
-//                 position: absolute;
-//                 left: -25%;
-//                 top: 80%;
-//                 width: 150%;
-//                 height: 100%;
-//                 pointer-events: none;
-
-//                 path {
-//                     fill: none;
-//                     stroke: #ffcc33;
-//                     stroke-width: 8;
-//                     stroke-linecap: round;
-//                     stroke-linejoin: round;
-//                     stroke-dasharray: 500;
-//                     stroke-dashoffset: 500;
-//                     transition: stroke-dashoffset 0.8s ease-out;
-//                 }
-//             }
-
-//             &:hover svg.skill-svg path {
-//                 stroke-dashoffset: 0;
-//             }
-//         }
-
-//         >a.project {
-//             position: relative;
-//             display: inline-block;
-
-//             svg.project-svg {
-//                 position: absolute;
-//                 left: -10%;
-//                 top: 70%;
-//                 width: 130%;
-//                 height: 20px;
-//                 pointer-events: none;
-//                 transform-origin: left bottom;
-//                 transform: rotate(-8deg);
-
-//                 path {
-//                     fill: none;
-//                     stroke: #ffcc33;
-//                     stroke-width: 6;
-//                     stroke-linecap: round;
-//                     stroke-dasharray: 500;
-//                     stroke-dashoffset: 500;
-//                     transition: stroke-dashoffset 0.8s ease-out;
-//                 }
-//             }
-
-//             &:hover svg.project-svg path {
-//                 stroke-dashoffset: 0;
-//             }
-//         }
-
-//         >a.contact {
-//             position: relative;
-//             display: inline-block;
-
-//             svg.contact-svg {
-//                 position: absolute;
-//                 left: -25%;
-//                 top: 30%;
-//                 width: 150%;
-//                 height: 30px;
-//                 pointer-events: none;
-
-//                 path {
-//                     fill: none;
-//                     stroke: #ffcc33;
-//                     stroke-width: 3;
-//                     stroke-linecap: round;
-//                     stroke-linejoin: round;
-//                     stroke-dasharray: 500;
-//                     stroke-dashoffset: 500;
-//                     transition: stroke-dashoffset 0.6s ease-out;
-//                 }
-//             }
-
-//             &:hover svg.contact-svg path {
-//                 stroke-dashoffset: 0;
-//             }
-//         }
-//     }
-// }
-
-// .switcher {
-//     display: flex;
-//     align-items: center;
-
-//     span {
-//         cursor: pointer;
-//         font-weight: bold;
-//         font-size: 12px;
-//         color: white;
-//         transition: color 0.3s;
-//         padding: 0 4px;
-
-//         &.active {
-//             color: coral;
-//         }
-//     }
-
-//     .track {
-//         background: coral;
-//         width: 25px;
-//         height: 10px;
-//         border-radius: 10px;
-//         position: relative;
-//         cursor: pointer;
-//     }
-
-//     .circle {
-//         background: blue;
-//         width: 15px;
-//         height: 15px;
-//         border-radius: 50%;
-//         position: absolute;
-//         top: -3px;
-//         left: 0;
-//         transition: left 0.3s;
-
-//         &.right {
-//             left: 12px;
-//         }
-//     }
-// }
-
 section {
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
 
-  > div {
+  >div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -210,7 +14,7 @@ section {
     padding: 19px 72px;
     box-sizing: border-box;
 
-    > img {
+    >img {
       width: 96px;
       height: 92px;
       cursor: pointer;
@@ -229,41 +33,41 @@ section {
       height: 40px;
       align-items: center;
       justify-content: center;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #fff;
+      border: none;
+      background: transparent;
       cursor: pointer;
       z-index: 1000;
-
-      .nav-toggle__bar {
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: #111;
-      }
     }
 
     /* ========== NEU: NAV-Container (mobile default: off-canvas) ========== */
     .nav {
-      position: fixed;
-      inset: 0 0 0 0; /* unter deinem Header (80px) */
-      background: #000; /* dunkler Hintergrund, weil deine Links weiß sind */
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background-image: url('../../../assets/images/content/above-the-fold-bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
       translate: 15% -115%;
-      transition: translate 220ms ease;
+      transition: translate 400ms ease;
       display: grid;
-      justify-items: start; 
-      align-content: flex-start;
+      justify-items: center;
+      align-content: start;
       gap: 16px;
-      padding: 16px 24px;
       /* Overlay-Ebene über Content */
-      z-index: 999;
+      z-index: 1001;
+      height: 445px;
     }
-    .nav.nav--open { translate: 0 0; }
+
+    .nav.nav--open {
+      translate: 0 0;
+    }
 
     /* ===== deine Link-Grund-Styles – erweitert auf .nav > a ===== */
     /* Original: >a  →  belassen für Desktop-Fall (wenn wir Nav statisch machen) */
-    > a,
-    .nav > a {
+    >a,
+    .nav>a {
       box-sizing: border-box;
       position: relative;
       display: inline-block;
@@ -275,8 +79,8 @@ section {
     }
 
     /* About me (SVG-Effekt) */
-    > a.about-me,
-    .nav > a.about-me {
+    >a.about-me,
+    .nav>a.about-me {
       svg.about-me-svg {
         position: absolute;
         top: -33%;
@@ -297,7 +101,9 @@ section {
         transition: stroke-dashoffset 0.8s ease;
       }
 
-      &:hover path { stroke-dashoffset: 0; }
+      &:hover path {
+        stroke-dashoffset: 0;
+      }
     }
 
     /* Skills (SVG-Effekt) */
@@ -326,12 +132,14 @@ section {
         }
       }
 
-      &:hover svg.skill-svg path { stroke-dashoffset: 0; }
+      &:hover svg.skill-svg path {
+        stroke-dashoffset: 0;
+      }
     }
 
     /* Projects (SVG-Effekt) */
-    > a.project,
-    .nav > a.project {
+    >a.project,
+    .nav>a.project {
       position: relative;
       display: inline-block;
 
@@ -356,12 +164,14 @@ section {
         }
       }
 
-      &:hover svg.project-svg path { stroke-dashoffset: 0; }
+      &:hover svg.project-svg path {
+        stroke-dashoffset: 0;
+      }
     }
 
     /* Contact (SVG-Effekt) */
-    > a.contact,
-    .nav > a.contact {
+    >a.contact,
+    .nav>a.contact {
       position: relative;
       display: inline-block;
 
@@ -385,7 +195,9 @@ section {
         }
       }
 
-      &:hover svg.contact-svg path { stroke-dashoffset: 0; }
+      &:hover svg.contact-svg path {
+        stroke-dashoffset: 0;
+      }
     }
   }
 }
@@ -403,7 +215,9 @@ section {
     transition: color 0.3s;
     padding: 0 4px;
 
-    &.active { color: coral; }
+    &.active {
+      color: coral;
+    }
   }
 
   .track {
@@ -425,15 +239,57 @@ section {
     left: 0;
     transition: left 0.3s;
 
-    &.right { left: 12px; }
+    &.right {
+      left: 12px;
+    }
+  }
+}
+
+.hamburger-menu-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  height: 80px;
+
+  >img:nth-child(1) {
+    width: 96px;
+    height: 92px;
+  }
+
+  >img:nth-child(2) {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
+
+.social-media-icons {
+  >a {
+    >img {
+      margin: 32px 16px 0 16px;
+    }
   }
 }
 
 /* ========== Desktop Layout ab 768px ========== */
 @media (min-width: 768px) {
-  section > div {
+  .hamburger-menu-icons {
+    display: none;
+  }
+
+  .social-media-icons {
+    display: none;
+  }
+
+  section>div {
+
     /* Burger ausblenden */
-    .nav-toggle { display: none; }
+    .nav-toggle {
+      display: none;
+    }
 
     /* Nav zurück in den Headerfluss */
     .nav {
@@ -443,9 +299,31 @@ section {
       transition: none;
       display: flex;
       align-items: center;
+      box-sizing: border-box;
+      padding-left: 10% !important;
+      justify-content: space-between;
       gap: 24px;
-      padding: 0;
-      background: transparent; /* Header bleibt wie vorher */
+      background: transparent;
+      /* Header bleibt wie vorher */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    >div {
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  }
+
+  .switcher {
+    margin-top: 8px;
+  }
+
+  nav {
+    >a {
+      color: white !important;
     }
   }
 }
