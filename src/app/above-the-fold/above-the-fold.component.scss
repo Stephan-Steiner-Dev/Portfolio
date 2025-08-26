@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .upper-half {
@@ -120,6 +121,7 @@
 .top-left {
     display: flex;
     flex-direction: column;
+    z-index: 988;
 }
 
 .btn {
@@ -253,6 +255,40 @@
             width: 100%;
             height: auto;
             border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 1256px) {}
+
+@media (max-width: 870px) {
+    .contacts {
+        display: none;
+    }
+
+    .letter {
+        font-size: 64px;
+    }
+
+    .user-image-div {
+        position: absolute;
+        top: 400px;
+        left: 25%;
+    }
+
+    .section-main {
+        padding-top: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (max-width: 420px) {
+        .lower-half {
+            padding-top: 0;
+        }
+
+        .letter {
+            font-size: 40px;
         }
     }
 }

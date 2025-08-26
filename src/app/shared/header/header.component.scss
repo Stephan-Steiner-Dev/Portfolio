@@ -57,7 +57,8 @@ section {
       gap: 16px;
       /* Overlay-Ebene über Content */
       z-index: 1001;
-      height: 445px;
+      height: 500px;
+      max-height: 100vh;
     }
 
     .nav.nav--open {
@@ -309,7 +310,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   section {
     >div {
       padding: 16px;
