@@ -277,6 +277,8 @@
     }
 
     .section-main {
+        min-height: 0vh;
+        height: 875px;
         padding-top: 50px;
         padding-left: 16px;
         padding-right: 16px;
@@ -284,11 +286,20 @@
 
     @media (max-width: 420px) {
         .lower-half {
-            padding-top: 0;
+            padding: 0;
+            >a {
+                >button {
+                    margin-top: 24px;
+                }
+            }
         }
 
         .letter {
             font-size: 40px;
+        }
+
+        .upper-half {
+            height: 35%;
         }
     }
 }
