@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { SharedDataService } from '../../app/shared/shared-data.service';
 
@@ -9,10 +9,26 @@ import { SharedDataService } from '../../app/shared/shared-data.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrls: ['./projects.component.scss',
+    './projects.mobile.scss'
+  ]
 })
 export class ProjectsComponent {
-  constructor(private router: Router, public sharedData: SharedDataService) { }
+  readonly DESKTOP_BP = 1024;      // halte das mit _breakpoints.scss in sync
+  isDesktop = false;
+
+  constructor(private router: Router, public sharedData: SharedDataService, @Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.isDesktop = window.innerWidth <= this.DESKTOP_BP;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(e: UIEvent) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.isDesktop = (e.target as Window).innerWidth <= this.DESKTOP_BP;
+    }
+  }
 
   projectsData = [{
     'img': 'assets/images/content/Laptop(1).png',

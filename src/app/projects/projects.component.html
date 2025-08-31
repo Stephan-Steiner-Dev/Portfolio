@@ -24,7 +24,7 @@
 
                 <button class="projects-btn"
                 (click)="showDetails(i)"
-                *ngIf="hoveredIndex === i"
+                *ngIf="isDesktop || hoveredIndex === i"
                 [class.first-btn]="i === 0">
                     Project details
                 </button>
@@ -32,7 +32,7 @@
 
             <div>
                 <div class="project-names">{{project.name}}</div>
-                <div>{{project.content}}</div>
+                <div class="project-description">{{project.content}}</div>
             </div>
         </div>
     </div>

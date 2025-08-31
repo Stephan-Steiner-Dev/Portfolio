@@ -1,0 +1,19 @@
+// src/styles/_breakpoints.scss
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// mobile-first
+@mixin mq($min) {
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+// optional: nach unten begrenzen
+@mixin mq-down($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}

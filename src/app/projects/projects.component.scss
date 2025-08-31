@@ -1,5 +1,5 @@
 .project-section {
-   
+
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -14,7 +14,7 @@
     align-items: space-between;
     padding: 144px 120px 0 120px;
     box-sizing: border-box;
-     max-width: 1440px;
+    max-width: 1440px;
 }
 
 .projects-grid>.title-container {
@@ -43,8 +43,8 @@
     }
 
     >.project-item {
-        height: 514.22px;
-        width: 560px;
+        max-height: 514.22px;
+        max-width: 560px;
         display: flex;
         align-items: space-between;
 
@@ -65,8 +65,10 @@
     }
 
     >div:nth-child(3) {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
+        font-style: regular;
+        font-weight: 400;
     }
 }
 
@@ -314,4 +316,11 @@
     font-style: bold;
     font-size: 24px;
     padding: 16px;
+}
+
+.project-description {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: regular;
+    font-weight: 400;
 }
