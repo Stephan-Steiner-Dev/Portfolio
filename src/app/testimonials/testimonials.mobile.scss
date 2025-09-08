@@ -1,0 +1,39 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-lg - 0.02px) {
+    :host .testimonials {
+        >div:nth-child(1) {
+            height: 1400px;
+        }
+    }
+
+    :host .lower-content {
+        height: 100% !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        margin-top: 40px;
+
+        >.notice:nth-child(1) {
+            position: relative !important;
+            top: -24px !important;
+        }
+
+        >.notice:nth-child(2) {
+            position: relative !important;
+            left: 0 !important;
+        }
+
+        >.notice:nth-child(3) {
+            position: relative !important;
+            top: 48px !important;
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    :host .testimonials {
+        >div:nth-child(1) {
+            padding: 144px 16px;
+        }
+    }
+}

@@ -20,7 +20,7 @@
         grid-row: auto !important;
         width: 100%;
         height: auto;
-                margin-top: 18px;
+        margin-top: 18px;
     }
 
     :host .image-wrapper0,
@@ -74,6 +74,7 @@
     }
 
     :host .projects-btn {
+        // position:
         top: auto;
         bottom: 16px;
         color: black;
@@ -101,5 +102,78 @@
     :host .floater1,
     :host .floater2 {
         place-items: center;
+    }
+
+    .project-names {
+        padding: 0;
+        padding-bottom: 8px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+
+    :host .image0,
+    :host .image1,
+    :host .image2 {
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    :host .projects-grid {
+        padding: 72px 16px 0 16px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-sm - 0.02px) {
+
+    :host .image0,
+    :host .image1,
+    :host .image2 {
+        height: auto;
+    }
+
+    :host .floater0,
+    :host .floater1,
+    :host .floater2 {
+        height: auto;
+    }
+
+    :host .image-wrapper0,
+    :host .image-wrapper1,
+    :host .image-wrapper2 {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .project-names:nth-child(1) {
+        padding-top: 48px;
+        padding-bottom: 8px;
+    }
+
+    :host .projects-btn.first-btn {
+        top: 100%;
+        right: 0;
+    }
+
+    :host .projects-btn {
+        top: 108%;
+        right: 0;
+    }
+}
+
+@include bp.mq-down(bp.$bp-xs - 0.02px) {
+        :host .projects-btn.first-btn {
+        font-size: 14px;
+        height: 36px;
+        top: 96%;
+    }
+
+    :host .projects-btn {
+        font-size: 14px;
+        height: 36px;
+        top: 102%;
     }
 }
