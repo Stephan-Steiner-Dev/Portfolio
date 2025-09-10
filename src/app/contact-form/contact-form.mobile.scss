@@ -1,0 +1,106 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-xl - 0.02px) {
+    :host .contact-container {
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .section-contact {
+        height: 1270px;
+        padding: 144px 60px 75px 60px;
+        box-sizing: border-box;
+    }
+
+    .left-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-top: 48px !important;
+        box-sizing: border-box;
+        justify-content: flex-end !important;
+
+        >div:nth-child(1) {
+            height: 85px !important;
+
+            >div:nth-child(2) {
+                font-size: 48px !important;
+                height: 60px !important;
+            }
+        }
+
+        >div:nth-child(2) {
+            margin-top: 24px !important;
+        }
+    }
+
+    .arrow {
+        left: 0;
+        // top: 400px;
+    }
+
+    .arrow-container {
+        top: 440px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-lg - 0.02px) {
+    .left-content {
+        justify-content: flex-end !important;
+
+        >div:nth-child(2) {
+            margin-top: 16px;
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .section-contact {
+        padding: 144px 16px 75px 16px;
+    }
+
+    .left-content {
+        >div:nth-child(1) {
+            height: auto !important;
+
+            >div:nth-child(2) {
+                font-size: 48px !important;
+                height: auto !important;
+            }
+        }
+    }
+
+    .arrow {
+        left: 0;
+        width: 194px !important;
+        height: 30px !important;
+    }
+
+    .arrow-container {
+        top: 450px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .arrow {
+        left: 0;
+        width: 170px !important;
+        height: 30px !important;
+    }
+}
+
+@include bp.mq-down(bp.$bp-xs - 0.02px) {
+    .left-content {
+        >div:nth-child(1) {
+            height: auto !important;
+
+            >div:nth-child(2) {
+                font-size: 48px !important;
+                height: auto !important;
+
+            }
+        }
+         >div:nth-child(2) {
+            height: auto !important;
+         }
+    }
+}

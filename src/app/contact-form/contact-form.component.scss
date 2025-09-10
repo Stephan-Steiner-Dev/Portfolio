@@ -7,23 +7,21 @@
     box-sizing: border-box;
     padding: 144px 120px 56px 120px;
     background-origin: border-box;
-background-clip: border-box;
+    background-clip: border-box;
 }
 
 .contact {
-
     display: flex;
     justify-content: center;
     align-items: center;
-        //    padding: 144px 120px 0px 120px;
-        box-sizing: border-box;
-    
+    //    padding: 144px 120px 0px 120px;
+    box-sizing: border-box;
 
     >.contact-container {
         width: 100%;
         max-width: 1200px;
         height: 560px;
- 
+
         color: white;
         display: flex;
         align-items: space-between;
@@ -36,6 +34,7 @@ background-clip: border-box;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-right: 24px;
 
             >div:nth-child(1) {
                 display: flex;
@@ -77,7 +76,7 @@ background-clip: border-box;
             }
 
             .arrow-container {
-                position:absolute;
+                position: absolute;
                 bottom: 0;
                 right: 0;
                 width: 100%;
@@ -86,7 +85,7 @@ background-clip: border-box;
             }
 
             .arrow {
-                width: 280px;;
+                width: 280px;
                 height: auto;
                 animation: drawErase 4s ease-in-out infinite;
             }
@@ -95,15 +94,27 @@ background-clip: border-box;
 }
 
 @keyframes drawErase {
-  0%   { clip-path: inset(0 100% 0 0); }
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
 
-  25%  { clip-path: inset(0 0%   0 0); }
+    25% {
+        clip-path: inset(0 0% 0 0);
+    }
 
-  45%  { clip-path: inset(0 0%   0 0); }
+    45% {
+        clip-path: inset(0 0% 0 0);
+    }
 
-  70%  { clip-path: inset(0 100% 0 0); }
+    70% {
+        clip-path: inset(0 100% 0 0);
+    }
 
-  90%  { clip-path: inset(0 100% 0 0); }
+    90% {
+        clip-path: inset(0 100% 0 0);
+    }
 
-  100% { clip-path: inset(0 100% 0 0); }
+    100% {
+        clip-path: inset(0 100% 0 0);
+    }
 }

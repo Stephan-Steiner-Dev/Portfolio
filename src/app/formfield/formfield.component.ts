@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [FormsModule, CircleBadgeComponent],
   templateUrl: './formfield.component.html',
-  styleUrl: './formfield.component.scss'
+  styleUrls: ['./formfield.component.scss', './formfield.mobile.scss']
 })
 export class FormfieldComponent {
 

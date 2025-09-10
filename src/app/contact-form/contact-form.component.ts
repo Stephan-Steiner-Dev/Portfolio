@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.scss'
+  styleUrls: ['./contact-form.component.scss', './contact-form.mobile.scss']
 })
 export class ContactFormComponent {
   content = [

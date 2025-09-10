@@ -1,3 +1,5 @@
+@use 'breakpoints' as bp;
+
 .circle-badge {
     position: relative;
     width: 168px;
@@ -38,5 +40,15 @@
         left: 15%;
         object-fit: contain;
         filter: brightness(0) saturate(100%) invert(0%) sepia(98%) saturate(11%) hue-rotate(351deg) brightness(98%) contrast(100%);
+    }
+}
+
+
+
+
+@include bp.mq-down(bp.$bp-sm - 0.02px) {
+    .circle-badge {
+        width: 130px !important;
+        height: 130px !important;
     }
 }

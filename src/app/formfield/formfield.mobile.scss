@@ -1,0 +1,50 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-xl - 0.02px) {
+    .logo {
+        right: 0px !important;
+        top: -490px !important;
+    }
+
+    .contact {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //    padding: 144px 120px 0px 120px;
+        box-sizing: border-box;
+
+        >.contact-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 560px;
+
+            color: white;
+            display: flex;
+            align-items: space-between;
+            justify-content: space-between;
+        }
+    }
+
+    .form {
+        padding: 0;
+        height: 460px;
+
+        >.input-div {
+            width: 100%;
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .form {
+        padding-top: 20px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-xs - 0.02px) {
+        .form {
+        padding-top: 40px;
+    }
+}
+
