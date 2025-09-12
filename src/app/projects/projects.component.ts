@@ -14,7 +14,7 @@ import { SharedDataService } from '../../app/shared/shared-data.service';
   ]
 })
 export class ProjectsComponent {
-  readonly DESKTOP_BP = 1024;      // halte das mit _breakpoints.scss in sync
+  readonly DESKTOP_BP = 1400;      // halte das mit _breakpoints.scss in sync
   isDesktop = false;
 
   constructor(private router: Router, public sharedData: SharedDataService, @Inject(PLATFORM_ID) private platformId: Object) {

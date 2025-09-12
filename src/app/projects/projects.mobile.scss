@@ -1,6 +1,24 @@
 @use 'breakpoints' as bp;
 
-@include bp.mq-down(bp.$bp-lg - 0.02px) {
+@include bp.mq-down(bp.$bp-lg) {
+
+    :host .image-wrapper0,
+    :host .image-wrapper1,
+    :host .image-wrapper2 {
+        width: 100%;
+        height: 340px;
+    }
+
+    :host .image0,
+    :host .image1,
+    :host .image2 {
+        width: 100%;
+        max-width: 550px;
+        border-radius: 16px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-xxl - 0.02px) {
 
     :host .projects-grid {
         grid-template-columns: 1fr;
@@ -27,13 +45,8 @@
     :host .image-wrapper1,
     :host .image-wrapper2 {
         width: 100%;
-        // max-width: 400px;
         height: 370px;
-        // overflow: hidden;
-
     }
-
-
 
     :host .image0,
     :host .image1,
@@ -74,7 +87,6 @@
     }
 
     :host .projects-btn {
-        // position:
         top: auto;
         bottom: 16px;
         color: black;
@@ -165,7 +177,7 @@
 }
 
 @include bp.mq-down(bp.$bp-xs - 0.02px) {
-        :host .projects-btn.first-btn {
+    :host .projects-btn.first-btn {
         font-size: 14px;
         height: 36px;
         top: 96%;

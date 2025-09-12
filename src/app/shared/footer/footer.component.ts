@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
   standalone: true,
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrls: ['./footer.component.scss', './footer.mobile.scss']
 })
 export class FooterComponent {
   constructor(private router: Router) {

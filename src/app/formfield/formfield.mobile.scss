@@ -43,8 +43,32 @@
 }
 
 @include bp.mq-down(bp.$bp-xs - 0.02px) {
-        .form {
+    .form {
         padding-top: 40px;
     }
-}
 
+    .logo {
+        right: 0px !important;
+        top: -525px !important;
+    }
+
+    .form {
+        >.input-div {
+            >div:nth-child(1) {
+
+                >.email-container,
+                >.name-container,
+                >.message-container {
+                    >label {
+                        font-size: 20px !important;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                    >input, textarea {
+                       font-size: 11px; 
+                    }
+                }
+            }
+        }
+    }
+}

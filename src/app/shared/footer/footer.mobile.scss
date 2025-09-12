@@ -1,0 +1,39 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .icon-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer {
+        >div {
+            position: relative;
+
+            >.links {
+                >.legal-notice-link {
+                    position: absolute;
+                    right: 0;
+                    bottom: 100px;
+                }
+            }
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .links {
+        >div {
+            >a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .icon-container{
+        >div {
+            font-size: 14px;;
+        }
+    }
+}
