@@ -1,0 +1,20 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-lg) {
+    section {
+        >div {
+            padding: 16px;
+            box-sizing: border-box;
+        }
+    }
+
+    .switcher {
+        margin-top: 8px;
+    }
+
+    nav {
+        >a {
+            color: white !important;
+        }
+    }
+}

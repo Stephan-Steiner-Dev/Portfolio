@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [ CommonModule],
   templateUrl: './above-the-fold.component.html',
-  styleUrls: ['./above-the-fold.component.scss']
+  styleUrls: ['./above-the-fold.component.scss', './above-the-fold.mobile.scss']
 })
 export class AboveTheFoldComponent {
   firstPart = 'Frontend';
@@ -14,7 +14,5 @@ export class AboveTheFoldComponent {
 
   get firstLetters() { return this.firstPart.split(''); }
   get secondLetters() { return this.secondPart.split(''); }
-  constructor(){
-    console.log()
-  }
+  constructor(){}
 }

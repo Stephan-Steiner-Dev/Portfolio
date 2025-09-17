@@ -3,7 +3,6 @@ section {
   justify-content: center;
   position: absolute;
   width: 100%;
-
   >div {
     display: flex;
     justify-content: space-between;
@@ -51,6 +50,10 @@ section {
       background-repeat: no-repeat;
       translate: 15% -115%;
       transition: translate 400ms ease;
+
+  // transform: translateX(-100%);     /* geschlossen: komplett oberhalb */
+  // transition: transform 400ms ease; 
+
       display: grid;
       justify-items: center;
       align-content: start;
@@ -59,6 +62,7 @@ section {
       z-index: 1001;
       height: 500px;
       max-height: 100vh;
+      overflow:auto;
     }
 
     .nav.nav--open {
@@ -306,25 +310,6 @@ section {
       gap: 24px;
       background: transparent;
       /* Header bleibt wie vorher */
-    }
-  }
-}
-
-@media (max-width: 850px) {
-  section {
-    >div {
-      padding: 16px;
-      box-sizing: border-box;
-    }
-  }
-
-  .switcher {
-    margin-top: 8px;
-  }
-
-  nav {
-    >a {
-      color: white !important;
     }
   }
 }

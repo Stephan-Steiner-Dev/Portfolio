@@ -7,7 +7,7 @@ import { CommonModule} from "@angular/common";
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project-page.component.html',
-  styleUrl: './project-page.component.scss'
+  styleUrls: ['./project-page.component.scss', './project-page.mobile.scss']
 })
 export class ProjectPageComponent {
   constructor(public sharedData: SharedDataService) {

@@ -1,0 +1,14 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-xxl) {
+    .locco-content {
+        flex-direction: column;
+    }
+}
+
+@include bp.mq-down(bp.$bp-lg) {
+    .project::before {
+    transform: rotate(90deg) scale(1.3);
+ 
+    }
+}

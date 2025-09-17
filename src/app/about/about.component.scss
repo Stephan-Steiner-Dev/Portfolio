@@ -174,6 +174,11 @@
         }
     }
 
+    >div:nth-child(2) {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
     @keyframes draw-line {
         0% {
             mask-position: 200% 0;
@@ -290,7 +295,7 @@
 
     .content {
         width: 100%;
-
+        padding: 0;
 
         >div:nth-child(3) {
             >a {
@@ -302,9 +307,9 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 560px) {
     .about-me {
-        height: 700px;
+        height: 800px;
         padding: 0px;
     }
 
@@ -372,6 +377,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+
         >img {
             height: 30px;
             width: 30px;
@@ -382,9 +388,10 @@
     .banner-text2 {
         font-size: 16px;
         margin-bottom: 2px;
-                display: flex;
+        display: flex;
         align-items: center;
         margin-bottom: 40px;
+
         >img {
             height: 30px;
             width: 30px;

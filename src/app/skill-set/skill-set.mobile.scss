@@ -1,0 +1,65 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-lg) {
+    .skill-section {
+        >div:nth-child(1) {
+            padding: 88px 16px 0 16px;
+        }
+    }
+
+    .skill-section {
+        height: 1100px;
+    }
+
+    .top-content img {
+        height: 160px;
+    }
+
+    .bottom-section {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-set {
+        justify-content: center;
+    }
+
+    .pull-container {
+        margin-top: 24px;
+    }
+
+    .skill-set img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .white-banner-text {
+        padding: 56px 8px 8px 0;
+        font-size: 16px;
+    }
+
+    .skill-set {
+        width: 100%;
+    }
+}
+
+@include bp.mq-down(bp.$bp-sm) {
+    .white-banner {
+        height: 310px;
+    }
+
+    .top-content img {
+      height: 230px;
+    }
+
+    .skill-section {
+        height: 1300px;
+    }
+}
+
+// @include bp.mq-down(bp.$bp-xs) {
+//     .top-content img {
+        
+//     }
+// }
