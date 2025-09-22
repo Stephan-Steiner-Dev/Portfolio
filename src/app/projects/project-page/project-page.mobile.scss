@@ -1,14 +1,99 @@
 @use 'breakpoints' as bp;
 
-@include bp.mq-down(bp.$bp-xxl) {
-    .locco-content {
-        flex-direction: column;
+@include bp.mq-down(bp.$bp-xl) {
+    .project {
+        background-image: url('./../../../assets/images/projects-page/pollo-bg-mobile.png');
+        background-position-y: top;
+        padding-bottom: 32px;
+
+        >.height {
+            position: relative;
+
+            >.locco-content {
+                width: 100%;
+                flex-direction: column;
+                height: 100%;
+                padding: 0 72px;
+
+                .left {
+                    width: 100%;
+                    justify-content: flex-start;
+                    height: auto;
+                    // >p {
+
+                    // }
+                    >.description {
+                        height: auto;
+                    }
+
+                    >.game-title {
+                        >h1 {
+                            margin: 16px 0 32px 0;
+                            font-size: 48px;
+                        }
+                    }
+                }
+            }
+
+            >.back-container {
+                position: absolute;
+                bottom: 0;
+                width: 50%;
+
+                >.go-back {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .right {
+        padding-top: 48px;
+        >.btn-container {
+            >.buttons {
+                width: 100%;
+            }
+        }
+
+        >.game-image {
+            height: auto;
+        }
     }
 }
 
 @include bp.mq-down(bp.$bp-lg) {
-    .project::before {
-    transform: rotate(90deg) scale(1.3);
- 
+    .project {
+        >.height {
+            >.locco-content {
+                padding: 0 16px;
+            }
+        }
     }
+}
+
+@include bp.mq-down(bp.$bp-md) {
+    .project {
+        >.height {
+            width: 100%;
+
+            .locco-content {
+                width: 100%;
+            }
+        }
+    }
+
+    .right {
+        >.game-image {
+            width: 100%;
+            height: auto;
+            max-width: 560px;
+        }
+    }
+
+    .game-screenshot {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 11;
+    }
+
 }

@@ -1,7 +1,8 @@
 <section class="project">
     <div class="height">
         <div class="back-container">
-            <div class="go-back" (click)="goBack()"><img src="../../../assets/images/projects-page/orange-arrow.png" alt="back-arrow">
+            <div class="go-back" (click)="goBack()"><img src="../../../assets/images/projects-page/orange-arrow.png"
+                    alt="back-arrow">
                 GoBack
             </div>
         </div>
@@ -19,8 +20,8 @@
 
                     <div class="duration">{{ sharedData.projectData[sharedData.projectPageIndex].duration }}</div>
                     <div class="tech-icons">
-                        <div *ngFor="let icon of sharedData.projectData[sharedData.projectPageIndex].icons" >
-                        <img class="icons" [src]="icon.src" alt="JavaScript">{{ icon.label }}
+                        <div *ngFor="let icon of sharedData.projectData[sharedData.projectPageIndex].icons">
+                            <img class="icons" [src]="icon.src" alt="JavaScript">{{ icon.label }}
                         </div>
                     </div>
                 </div>
@@ -33,15 +34,20 @@
                 </div>
                 <div class="btn-container">
                     <div class="buttons">
-                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectGitHub }}" target="_blank">GitHub</a>
-                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectUrl }}" target="_blank">Live Test</a>
+                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectGitHub }}"
+                            target="_blank">GitHub</a>
+                        <a href="{{ sharedData.projectData[sharedData.projectPageIndex].projectUrl }}"
+                            target="_blank">Live Test</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="next-container">
-            <div class="next-project" (click)="goForward()">Next Project <img src="../../../assets/images/projects-page/yellow-arrow.png"
-                    alt="arrow-next"></div>
+            <div class="next-project" (click)="goForward()">Next Project <img
+                    src="../../../assets/images/projects-page/yellow-arrow.png" alt="arrow-next"></div>
         </div>
+
+    </div>
+    <div class="header-mobile-overlay">
     </div>
 </section>

@@ -34,7 +34,7 @@
 }
 
 .top-content img {
-    width: 656px;
+    width: 680px;
     height: 144px;
     padding: 56px;
     gap: 10px;
@@ -251,11 +251,6 @@
 }
 
 @media(max-width: 900px) {
-
-    // .bottom-section{
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
     .top-content img {
         height: 160px;
     }

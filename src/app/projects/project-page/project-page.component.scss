@@ -1,21 +1,16 @@
   .project {
-
-
-  overflow: hidden;
-
-
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-    //   background-color: black;
+      background-color: black;
       width: 100%;
       min-height: 100vh;
       padding-top: 80px;
-    //   background-image: url('../../../assets/images/projects-page/pollo-bg.png');
-    //   background-size: cover;
-    //   background-position: center;
-    //   background-repeat: no-repeat;
+      background-image: url('../../../assets/images/projects-page/pollo-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       box-sizing: border-box;
 
       >.height {
@@ -81,6 +76,20 @@
                               padding-right: 8px;
                           }
                       }
+
+                      >p {
+                          font-size: 18px;
+                      }
+
+                      >h2 {
+                          font-size: 20px;
+                          font-weight: 800;
+                      }
+
+                      >.duration {
+                          margin-top: 1rem;
+                          font-weight: bold;
+                      }
                   }
 
                   >.game-title {
@@ -99,70 +108,39 @@
                           height: 20px;
 
 
-                animation: line-mask 5s infinite;
+                          animation: line-mask 5s infinite;
                       }
-                  }
-
-                  >h2 {
-                      margin-top: 2rem;
-                      font-size: 1.2rem;
-                  }
-
-                  >p {
-                      max-width: 400px;
-                  }
-
-                  >.duration {
-                      margin-top: 1rem;
-                      font-weight: bold;
                   }
               }
           }
       }
   }
 
+  @keyframes line-mask {
+      0% {
+          clip-path: inset(0 100% 0 0);
+      }
 
+      20% {
+          clip-path: inset(0 100% 0 0);
+      }
 
-.project::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;;
-  background-image: url('../../../assets/images/projects-page/pollo-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  transform-origin: center center;
-}
+      40% {
+          clip-path: inset(0 0 0 0);
+      }
 
+      60% {
+          clip-path: inset(0 0 0 0);
+      }
 
+      80% {
+          clip-path: inset(0 100% 0 0);
+      }
 
-
-
-@keyframes line-mask {
-  0% {
-    clip-path: inset(0 100% 0 0);
+      100% {
+          clip-path: inset(0 100% 0 0);
+      }
   }
-  20% {
-    clip-path: inset(0 100% 0 0);
-  }
-  40% {
-    clip-path: inset(0 0 0 0);
-  }
-  60% {
-    clip-path: inset(0 0 0 0);
-  }
-  80% {
-    clip-path: inset(0 100% 0 0);
-  }
-  100% {
-    clip-path: inset(0 100% 0 0);
-  }
-}
 
   .icons {
       height: 24px;
@@ -186,7 +164,7 @@
       >.game-image {
           border-radius: 20px;
           overflow: hidden;
-          height: 490.22px !important;
+          height: 490.22px;
           width: 560px;
           display: flex;
           align-items: flex-end;
@@ -210,7 +188,7 @@
 
   .game-screenshot {
       border-radius: 20px;
-      height: 398.22px !important;
+      height: 398.22px;
       width: 560px;
   }
 
@@ -272,4 +250,20 @@
               padding: 0 8px;
           }
       }
+  }
+
+  .header-mobile-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background: linear-gradient(to bottom,
+              rgba(0, 0, 0, 0.8),
+              /* oben dunkler, 40% Deckkraft */
+              rgba(48, 48, 48, 0)
+              /* unten komplett transparent */
+          );
+      height: 80px;
+      width: 100%;
+      pointer-events: none;
   }

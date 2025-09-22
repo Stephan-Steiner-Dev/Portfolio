@@ -48,7 +48,8 @@ section {
       background-image: url('../../../assets/images/content/above-the-fold-bg.png');
       background-size: cover;
       background-repeat: no-repeat;
-      translate: 15% -115%;
+      background-position-y: bottom;
+      translate: 0% -115%;
       transition: translate 400ms ease;
 
   // transform: translateX(-100%);     /* geschlossen: komplett oberhalb */
@@ -280,7 +281,7 @@ section {
 }
 
 /* ========== Desktop Layout ab 768px ========== */
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .hamburger-menu-icons {
     display: none;
   }
