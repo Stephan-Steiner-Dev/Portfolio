@@ -31,6 +31,10 @@
                             margin: 16px 0 32px 0;
                             font-size: 48px;
                         }
+
+                        >img {
+                            bottom: 16%;
+                        }
                     }
                 }
             }
@@ -49,6 +53,7 @@
 
     .right {
         padding-top: 48px;
+
         >.btn-container {
             >.buttons {
                 width: 100%;
@@ -73,11 +78,32 @@
 
 @include bp.mq-down(bp.$bp-md) {
     .project {
+        background-size: 768px 150%;
+        background-position: top;
+
         >.height {
             width: 100%;
 
             .locco-content {
                 width: 100%;
+            }
+
+            >.back-container {
+                padding: 0 8px;
+                >.go-back {
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .next-container {
+        padding: 0 8px;
+        >.next-project {
+            &:hover {
+                color: white;
             }
         }
     }
@@ -96,4 +122,20 @@
         aspect-ratio: 16 / 11;
     }
 
+}
+
+@include bp.mq-down(bp.$bp-sm) {
+    .project {
+        >.height {
+            >.locco-content {
+                >.left {
+                    >.description {
+                        >.tech-icons {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
