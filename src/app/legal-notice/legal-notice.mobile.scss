@@ -1,0 +1,27 @@
+@use 'breakpoints' as bp;
+
+@include bp.mq-down(bp.$bp-md - 0.02px) {
+    .footer {
+        height: 300px;
+        padding-top: 100px;
+    }
+
+    .imprint{
+        >.bg-div{
+            height: 250px;
+            >.headline {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    .main-part {
+        >.imprint-content {
+            padding: 0 16px;
+        }
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}

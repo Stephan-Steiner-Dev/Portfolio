@@ -3,20 +3,20 @@
         <div class="upper-content">
             <div class="arrow-text">
                 <img src="../../assets/images/content/testimonials-arrow.png" alt="arrow">
-                <div>IN THEIR WORDS:</div>
+                <div>{{ 'TESTIMONIALS.TITLE' | translate }}</div>
             </div>
             <div class="colleagues-headline">
-                Colleagues' Thoughts
+                {{ 'TESTIMONIALS.SUBTITLE' | translate }}
             </div>
         </div>
         <div class="lower-content">
-            <div class="notice" [ngClass]="" *ngFor="let item of comments">
+            <div class="notice" [ngClass]="" *ngFor="let item of comments; let i = index">
                 <div>
-                    <div>{{ item.comment }}</div>
+                    <div>{{ "TESTIMONIALS.CONTENT." + i + ".COMMENT" | translate }}</div>
                 </div>
                 <div>
                     <div>
-                        <div>{{ item.name }}</div>
+                        <div>{{ "TESTIMONIALS.CONTENT." + i + ".NAME" | translate }}</div>
                         <div>{{ item.profession }}</div>
                     </div>
                     <img src="../../assets/images/content/testimonials-linked-in-black.png" alt="linkedIN">

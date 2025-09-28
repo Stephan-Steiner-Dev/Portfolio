@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormfieldComponent } from '../formfield/formfield.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule,
     FormfieldComponent,
     FooterComponent,
-    FormsModule
+    FormsModule,
+    TranslatePipe
   ],
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss', './contact-form.mobile.scss']

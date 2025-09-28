@@ -309,7 +309,7 @@
 
 @media (max-width: 560px) {
     .about-me {
-        height: 800px;
+        height: auto;
         padding: 0px;
     }
 
@@ -338,6 +338,7 @@
 
     .features {
         width: 100%;
+        margin-top: 64px;
     }
 
     .feature-0 {

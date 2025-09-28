@@ -1,15 +1,13 @@
 <section class="project-section" id="projectsSection">
     <div class="projects-grid">
         <div class="title-container">
-            <div>MY CRAFT</div>
+            <div>{{ 'PROJECTS.TITLE' | translate }}</div>
             <div>
-                <div class="headline">Projects
+                <div class="headline">{{ 'PROJECTS.SUBTITLE' | translate }}
                     <img class="underline" src="../../assets/icons/underline-projects.png" alt="underline">
                 </div>
             </div>
-            <div>Encourage people to take a look and interact with your projects.
-                Highlight your approach to creating responsive,
-                user-friendly projects with efficient code.</div>
+            <div>{{ 'PROJECTS.DESCRIPTION' | translate }}</div>
         </div>
 
         <div *ngFor="let project of projectsData; let i = index" class="project-item">
@@ -31,8 +29,8 @@
             </div>
 
             <div>
-                <div class="project-names">{{project.name}}</div>
-                <div class="project-description">{{project.content}}</div>
+                <div class="project-names">{{ 'PROJECTS.' + project.name | translate }}</div>
+                <div class="project-description">{{ 'PROJECTS.' + project.name + '_DESCRIPTION' | translate }}</div>
             </div>
         </div>
     </div>

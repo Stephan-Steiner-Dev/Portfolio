@@ -5,25 +5,21 @@
                 [style.backgroundImage]="'url(' + item.pathBanner + ')'">
                 <div class="banner-text{{ i }}">
                     <img [src]="item.pathIcon" alt="{{ item.content }}" />
-                    <p>{{ item.content }}</p>
+                    <p>{{ 'ABOUT_ME.FEATURES.' + i | translate }}</p>
                 </div>
             </div>
         </div>
         <div class="content">
             <div>
-                <div>WHO'S STEPHAN?</div>
-                <div>About me
+                <div>{{ 'ABOUT_ME.CONTENT.WHO' | translate }}</div>
+                <div>{{ 'ABOUT_ME.CONTENT.TITLE' | translate }}
                     <img src="../../assets/images/content/about-me-underline.png" alt="">
                 </div>
             </div>
-            <div>Hey, I’m Stephan. I get a real kick out of programming—turning nothing into something cool. Every day I
-                pick up new tools and tricks to write cleaner, more efficient code. At Developer Academy I’ve already
-                gained
-                tons of hands‑on experience, and I can’t wait to tackle fresh challenges and bring creative projects to
-                life!
+            <div>{{ 'ABOUT_ME.CONTENT.MOTIVATION' | translate }}
             </div>
             <div>
-                <a href="#sectionContact"><button>Let's Talk</button></a>
+                <a href="#sectionContact"><button>{{ 'ABOUT_ME.CONTENT.BUTTON' | translate }}</button></a>
             </div>
         </div>
     </div>

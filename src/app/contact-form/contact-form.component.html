@@ -3,8 +3,8 @@
         <div class="contact-container">
             <div class="left-content" *ngFor="let item of content">
                 <div>
-                    <div>{{item.headline}}</div>
-                    <div>{{item.subHeadline}}</div>
+                    <div>{{ 'CONTACT.TITLE' | translate }}</div>
+                    <div>{{ 'CONTACT.SUBTITLE' | translate }}</div>
                 </div>
                 <div>
                     <div [innerHTML]="item.contactText"></div>

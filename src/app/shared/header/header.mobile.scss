@@ -1,13 +1,49 @@
 @use 'breakpoints' as bp;
 
+@include bp.mq(bp.$bp-xxl) {
+    .hamburger-menu-icons {
+        display: none;
+    }
+
+    .social-media-icons {
+        display: none;
+    }
+
+    section {
+        z-index: 1000;
+
+        div {
+            .nav-toggle {
+                display: none;
+            }
+
+            .nav {
+                position: static;
+                inset: auto;
+                translate: none;
+                transition: none;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding-left: 10% !important;
+                justify-content: space-between;
+                gap: 24px;
+                background: transparent;
+                padding-bottom: 0%;
+                height: 300px;
+            }
+        }
+    }
+}
+
 @include bp.mq-down(bp.$bp-lg) {
     section {
         >div {
             padding: 16px;
             box-sizing: border-box;
-            >img{
-                z-index: 1;
-            }
+            // >img{
+            //     z-index: 1;
+            // }
         }
     }
 

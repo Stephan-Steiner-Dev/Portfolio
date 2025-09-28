@@ -21,28 +21,28 @@
 
 
       <a class="about-me" routerLink="/" fragment="aboutMeSection" (click)="open=false" [style.color]="router.url === '/projects-page' ? 'black' : ''">
-        About me
+        {{ 'HEADER.ABOUT' | translate }}
         <svg viewBox="0 0 180 60" class="about-me-svg" preserveAspectRatio="none">
           <path d="M93,4 C20,5 20,55 90,55 C160,55 160,5 85,11" />
         </svg>
       </a>
 
       <a class="skill" routerLink="/" fragment="skillSection" (click)="open=false" [style.color]="router.url === '/projects-page' ? '#F77A54' : ''">
-        Skills
+        {{ 'HEADER.SKILLS' | translate }}
         <svg class="skill-svg" viewBox="0 0 160 60" preserveAspectRatio="none">
           <path d="M-20,14 C20,10 50,7 70,10 C100,18 130,6 150,12" />
         </svg>
       </a>
 
       <a class="project" routerLink="/" fragment="projectsSection" (click)="open=false">
-        Projects
+        {{ 'HEADER.PROJECTS' | translate }}
         <svg class="project-svg" viewBox="0 0 260 40" preserveAspectRatio="none">
           <path d="M0,10 Q10,2 20,10 T40,10 T60,10 T80,10 T100,10 T120,10 T140,10 T160,10 T180,10 T200,10 T220,10 T240,10 T260,10" />
         </svg>
       </a>
 
       <a class="contact" routerLink="/" fragment="sectionContact" (click)="open=false">
-        Contact
+        {{ 'HEADER.CONTACT' | translate }}
         <svg class="contact-svg" viewBox="0 0 260 30" preserveAspectRatio="none">
           <path d="M30,18 L130,18 L60,28 L230,20" />
         </svg>

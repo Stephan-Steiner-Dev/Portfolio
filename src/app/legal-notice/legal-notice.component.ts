@@ -7,7 +7,7 @@ import { FooterComponent } from '../shared/footer/footer.component';
   standalone: true,
   imports: [FooterComponent],
   templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  styleUrls: ['./legal-notice.component.scss', './legal-notice.mobile.scss']
 })
 export class LegalNoticeComponent {
 

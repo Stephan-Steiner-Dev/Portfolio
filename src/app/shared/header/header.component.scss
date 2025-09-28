@@ -3,6 +3,7 @@ section {
   justify-content: center;
   position: absolute;
   width: 100%;
+
   >div {
     display: flex;
     justify-content: space-between;
@@ -51,27 +52,23 @@ section {
       background-position-y: bottom;
       translate: 0% -115%;
       transition: translate 400ms ease;
-
-  // transform: translateX(-100%);     /* geschlossen: komplett oberhalb */
-  // transition: transform 400ms ease; 
-
       display: grid;
       justify-items: center;
-      align-content: start;
+      align-content: space-evenly;
       gap: 16px;
-      /* Overlay-Ebene über Content */
       z-index: 1001;
       height: 500px;
       max-height: 100vh;
-      overflow:auto;
+      overflow: auto;
+      padding-bottom: 15%;
+      box-sizing: border-box;
     }
 
     .nav.nav--open {
       translate: 0 0;
+      overflow-y: hidden;
     }
 
-    /* ===== deine Link-Grund-Styles – erweitert auf .nav > a ===== */
-    /* Original: >a  →  belassen für Desktop-Fall (wenn wir Nav statisch machen) */
     >a,
     .nav>a {
       box-sizing: border-box;
@@ -84,7 +81,6 @@ section {
       transition: color 0.3s;
     }
 
-    /* About me (SVG-Effekt) */
     >a.about-me,
     .nav>a.about-me {
       svg.about-me-svg {
@@ -112,7 +108,6 @@ section {
       }
     }
 
-    /* Skills (SVG-Effekt) */
     a.skill,
     .nav a.skill {
       position: relative;
@@ -143,7 +138,6 @@ section {
       }
     }
 
-    /* Projects (SVG-Effekt) */
     >a.project,
     .nav>a.project {
       position: relative;
@@ -175,7 +169,6 @@ section {
       }
     }
 
-    /* Contact (SVG-Effekt) */
     >a.contact,
     .nav>a.contact {
       position: relative;
@@ -208,7 +201,6 @@ section {
   }
 }
 
-/* Language Switcher (unverändert, nur sichtbar im Nav auf Mobile) */
 .switcher {
   display: flex;
   align-items: center;
@@ -276,41 +268,6 @@ section {
   >a {
     >img {
       margin: 32px 16px 0 16px;
-    }
-  }
-}
-
-/* ========== Desktop Layout ab 768px ========== */
-@media (min-width: 1400px) {
-  .hamburger-menu-icons {
-    display: none;
-  }
-
-  .social-media-icons {
-    display: none;
-  }
-
-  section>div {
-
-    /* Burger ausblenden */
-    .nav-toggle {
-      display: none;
-    }
-
-    /* Nav zurück in den Headerfluss */
-    .nav {
-      position: static;
-      inset: auto;
-      translate: none;
-      transition: none;
-      display: flex;
-      align-items: center;
-      box-sizing: border-box;
-      padding-left: 10% !important;
-      justify-content: space-between;
-      gap: 24px;
-      background: transparent;
-      /* Header bleibt wie vorher */
     }
   }
 }

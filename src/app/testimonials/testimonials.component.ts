@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss', './testimonials.mobile.scss']
 })

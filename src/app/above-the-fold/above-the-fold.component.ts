@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-above-the-fold',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [ CommonModule, TranslatePipe],
   templateUrl: './above-the-fold.component.html',
   styleUrls: ['./above-the-fold.component.scss', './above-the-fold.mobile.scss']
 })
