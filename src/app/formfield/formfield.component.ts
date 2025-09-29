@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CircleBadgeComponent } from '../shared/circle-badge/circle-badge.component';
 import { HttpClient } from '@angular/common/http';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-formfield',
   standalone: true,
-  imports: [FormsModule, CircleBadgeComponent],
+  imports: [FormsModule, CircleBadgeComponent, TranslatePipe],
   templateUrl: './formfield.component.html',
   styleUrls: ['./formfield.component.scss', './formfield.mobile.scss']
 })

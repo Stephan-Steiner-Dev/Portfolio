@@ -45,7 +45,7 @@
 
 @include bp.mq-down(bp.$bp-lg - 0.02px) {
     .left-content {
-        justify-content: flex-end !important;
+        justify-content: space-around !important;
 
         >div:nth-child(2) {
             margin-top: 16px;
@@ -59,11 +59,12 @@
     }
 
     .left-content {
+
         >div:nth-child(1) {
             height: auto !important;
 
             >div:nth-child(2) {
-                font-size: 48px !important;
+                font-size: 32px !important;
                 height: auto !important;
             }
         }
@@ -80,7 +81,17 @@
     }
 }
 
-@include bp.mq-down(bp.$bp-md - 0.02px) {
+@include bp.mq-down(bp.$bp-sm - 0.02px) {
+    .contact {
+        >.contact-container {
+            >.left-content {
+                >div:nth-child(2) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
     .arrow {
         left: 0;
         width: 170px !important;
@@ -94,7 +105,6 @@
             height: auto !important;
 
             >div:nth-child(2) {
-                font-size: 40px !important;
                 height: auto !important;
 
             }
@@ -102,6 +112,7 @@
 
         >div:nth-child(2) {
             height: auto !important;
+            // font-size: 16px;
         }
     }
 

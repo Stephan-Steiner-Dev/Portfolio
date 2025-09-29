@@ -46,14 +46,7 @@
 
 
 
-@include bp.mq-down(bp.$bp-sm - 0.02px) {
-    .circle-badge {
-        width: 130px !important;
-        height: 130px !important;
-    }
-}
-
-@include bp.mq-down(bp.$bp-xs - 0.02px) {
+@include bp.mq-down(bp.$bp-lg - 0.02px) {
     .circle-badge {
         width: 100px !important;
         height: 100px !important;

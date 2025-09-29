@@ -123,4 +123,17 @@
         height: 1160px;
         margin-top: 0;
     }
+
+    .testimonials {
+        >div:nth-child(1) {
+            >.upper-content {
+                >.arrow-text {
+                    >img {
+                        display: block;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
 }
