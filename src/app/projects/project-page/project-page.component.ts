@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SharedDataService } from '../../shared/shared-data.service';
 import { CommonModule} from "@angular/common";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './project-page.component.html',
   styleUrls: ['./project-page.component.scss', './project-page.mobile.scss']
 })

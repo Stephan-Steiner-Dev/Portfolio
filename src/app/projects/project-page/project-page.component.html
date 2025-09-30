@@ -3,22 +3,22 @@
         <div class="back-container">
             <div class="go-back" (click)="goBack()"><img src="../../../assets/images/projects-page/orange-arrow.png"
                     alt="back-arrow">
-                GoBack
+                {{ "PROJECT_PAGE.BACK_BTN" | translate }}
             </div>
         </div>
         <div class="locco-content">
             <div class="left">
                 <div class="game-title">
-                    <h1>{{ sharedData.projectData[sharedData.projectPageIndex].projectName }} </h1>
+                    <h1>{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".NAME" | translate }}</h1>
                     <img src="../../../assets/images/projects-page/blue-underline.png" alt="">
                 </div>
                 <div class="description">
-                    <h2>{{ sharedData.projectData[sharedData.projectPageIndex].headline }}</h2>
-                    <p>{{ sharedData.projectData[sharedData.projectPageIndex].descriptionText }}</p>
-                    <h2>{{ sharedData.projectData[sharedData.projectPageIndex].subheadline }}</h2>
-                    <p>{{ sharedData.projectData[sharedData.projectPageIndex].detailText }}</p>
+                    <h2>{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".DESCRIPTION" | translate }}</h2>
+                    <p>{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".DESCRIPTION_CONTENT" | translate }}</p>
+                    <h2>{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".IMPLEMENTATION_DESTAILS" | translate }}</h2>
+                    <p>{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".IMPLEMENTATION_DESTAILS_CONTENT" | translate }}</p>
 
-                    <div class="duration">{{ sharedData.projectData[sharedData.projectPageIndex].duration }}</div>
+                    <div class="duration">{{ "PROJECT_PAGE." + sharedData.projectPageIndex + ".DURATION" | translate }}</div>
                     <div class="tech-icons">
                         <div *ngFor="let icon of sharedData.projectData[sharedData.projectPageIndex].icons">
                             <img class="icons" [src]="icon.src" alt="JavaScript">{{ icon.label }}
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="next-container">
-            <div class="next-project" (click)="goForward()">Next Project <img
+            <div class="next-project" (click)="goForward()">{{ "PROJECT_PAGE.FORWARD_BTN" | translate }}<img
                     src="../../../assets/images/projects-page/yellow-arrow.png" alt="arrow-next"></div>
         </div>
 
