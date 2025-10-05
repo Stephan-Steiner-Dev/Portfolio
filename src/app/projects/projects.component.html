@@ -4,7 +4,7 @@
             <div>{{ 'PROJECTS.TITLE' | translate }}</div>
             <div>
                 <div class="headline">{{ 'PROJECTS.SUBTITLE' | translate }}
-                    <img class="underline" src="../../assets/icons/underline-projects.png" alt="underline">
+                    <img class="underline" src="assets/icons/underline-projects.png" alt="underline">
                 </div>
             </div>
             <div>{{ 'PROJECTS.DESCRIPTION' | translate }}</div>
@@ -17,7 +17,7 @@
                     <img [src]="project.img" [alt]="project.name" [ngClass]="'image' + i" />
                 </div>
 
-                <img *ngIf="i === 0" class="featured-project-icon" src="../../assets/icons/featured-project.png"
+                <img *ngIf="i === 0" class="featured-project-icon" src="assets/icons/featured-project.png"
                     alt="Featured Project">
 
                 <button class="projects-btn"

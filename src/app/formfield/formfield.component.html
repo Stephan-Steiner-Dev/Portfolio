@@ -4,9 +4,9 @@
         <div>
             <div class="name-container">
                 <label for="name">{{ 'CONTACT.FORM.1.TITLE' | translate }}</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="name" id="name" name="name" placeholder="{{ 'CONTACT.FORM.1.PLACEHOLDER' | translate }}"
-                    required>
-                @if(!name.valid && name.touched) {
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="{{ 'CONTACT.FORM.1.PLACEHOLDER' | translate }}" required>
+                @if(!name.valid && (name.touched || contactForm.submitted)) {
                 <span>{{ 'CONTACT.FORM.1.ALERT' | translate }}</span>
                 }
             </div>
@@ -14,9 +14,9 @@
             <div class="email-container">
                 <label for="email">{{ 'CONTACT.FORM.2.TITLE' | translate }}</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="{{ 'CONTACT.FORM.2.PLACEHOLDER' | translate }}" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                    required>
-                @if(!email.valid && email.touched) {
+                    placeholder="{{ 'CONTACT.FORM.2.PLACEHOLDER' | translate }}"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                @if(!email.valid && (email.touched || contactForm.submitted)) {
                 <span>{{ 'CONTACT.FORM.2.ALERT' | translate }}</span>
                 }
             </div>
@@ -25,18 +25,25 @@
                 <label for="message">{{ 'CONTACT.FORM.3.TITLE' | translate }}</label>
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
                     placeholder="{{ 'CONTACT.FORM.3.PLACEHOLDER' | translate }}" required></textarea>
-                @if(!message.valid && message.touched) {
+                @if(message.invalid && (message.touched || contactForm.submitted)) {
                 <span>{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
                 }
             </div>
         </div>
 
         <div class="checkbox-container">
+            <span>
+                @if(privacy.invalid && (privacy.touched || contactForm.submitted)){
+                <div class="policy-alert" style="color: #F77B57;">{{ 'CONTACT.ALERT' | translate }}</div>
+                }
+            </span>
             <div>
-                <input type="checkbox" id="checkbox" required>
-                <label class="checkbox-label" for="checkbox">{{ 'CONTACT.POLICY' | translate }}</label>
+                <input type="checkbox" id="checkbox" required name="checkbox" [(ngModel)]="contactData.checkbox"
+                    #privacy="ngModel" required>
+                <label class="checkbox-label" for="checkbox">
+                    {{ 'CONTACT.POLICY' | translate }}</label>
             </div>
-            <div class="d-none" style="color: #F77B57;">Please accept the privacy policy.</div>
+
             <input type="submit" value="{{ 'CONTACT.BTN' | translate}}">
         </div>
 

@@ -15,15 +15,15 @@ export class FormfieldComponent {
 
   http = inject(HttpClient);
 
-
   contactData = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    checkbox: ""
   }
 
 
-  mailTest = true;
+
 
   post = {
     endPoint: 'https://localhost:8080/sendMail.php',
@@ -37,7 +37,7 @@ export class FormfieldComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -49,7 +49,7 @@ export class FormfieldComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
 
       ngForm.resetForm();
     }

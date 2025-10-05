@@ -24,6 +24,7 @@
             align-items: space-between;
             justify-content: space-between;
         }
+
     }
 
     .form {
@@ -32,6 +33,11 @@
 
         >.input-div {
             width: 100%;
+            >.checkbox-container {
+                >span {
+                    margin-left: 53px;
+                }
+            }
         }
     }
 }
@@ -40,8 +46,30 @@
     .form {
         padding-top: 20px;
     }
+
     .checkbox-label {
         font-size: 12px;
+    }
+
+    .form {
+        >.input-div {
+            >.checkbox-container {
+
+                >span {
+                    height: 17px;
+
+                    >.policy-alert {
+
+                        font-size: 12px;
+                        height: 16px;
+                    }
+                }
+
+                >div:nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
 
@@ -67,8 +95,10 @@
                         font-weight: 500;
                         cursor: pointer;
                     }
-                    >input, textarea {
-                       font-size: 11px; 
+
+                    >input,
+                    textarea {
+                        font-size: 11px;
                     }
                 }
             }

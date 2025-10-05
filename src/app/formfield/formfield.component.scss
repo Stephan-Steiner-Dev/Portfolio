@@ -98,7 +98,7 @@ input[type=submit] {
 }
 
 input[type=email],
-[type=name],
+[type=text],
 textarea {
     background-color: transparent;
     border: none;
@@ -197,6 +197,16 @@ input[type="checkbox"]:checked::after {
 
 input[type="checkbox"]:focus::before {
     outline-offset: 2px;
+}
+
+.form {
+    >.input-div {
+        >.checkbox-container {
+            >span {
+                margin-left: 48px;
+            }
+        }
+    }
 }
 
 .d-none {

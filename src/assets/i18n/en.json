@@ -76,6 +76,7 @@
             }
         },
         "POLICY": "I've read the privacy policy and agree to the processing of my data as outlined.",
+        "ALERT" : "Please accept the privacy policy.",
         "BTN": "Submit"
     },
     "FOOTER": {

@@ -1,6 +1,6 @@
 <section>
   <div [class.menu-open]="open">
-    <img (click)="toHomeSection()" src="../../assets/icons/my-icon.png" alt="">
+    <img (click)="toHomeSection()" src="assets/icons/my-icon.png" alt="">
 
     <!-- NEU: Burger-Button (nur für Mobile sichtbar per CSS) -->
     <button
@@ -9,14 +9,14 @@
       aria-controls="primary-nav"
       [attr.aria-expanded]="open"
       (click)="toggleMenu()">
-      <img src="../../../assets/icons/hamburger-menu.png" alt="">
+      <img src="assets/icons/hamburger-menu.png" alt="">
     </button>
 
     <!-- NEU: Nav-Container (enthält deine bestehenden Links + Switcher) -->
     <nav id="primary-nav" class="nav" [class.nav--open]="open">
       <div class="hamburger-menu-icons">
-        <img src="../../../assets/icons/my-icon.png" alt="">
-        <img (click)="toggleMenu()" src="../../../assets/icons/hamburger-menu(1).png" alt="">
+        <img src="assets/icons/my-icon.png" alt="">
+        <img (click)="toggleMenu()" src="assets/icons/hamburger-menu(1).png" alt="">
       </div>
 
 
@@ -57,9 +57,9 @@
       </div>
 
       <div class="social-media-icons">
-        <a href="https://www.linkedin.com/in/stephan-steiner-a22b4b380" target="_blank"><img src="../../../assets/icons/linkedIn-icon.png" alt=""></a>
-        <a href="https://github.com/Stephan-Steiner-Dev" target="_blank"><img src="../../../assets/icons/github-icon.png" alt=""></a>
-        <a href="mailto:stephan-steiner-dev@proton.de" target="_blank"><img src="../../../assets/icons/mail-icon.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/stephan-steiner-a22b4b380" target="_blank"><img src="assets/icons/linkedIn-icon.png" alt=""></a>
+        <a href="https://github.com/Stephan-Steiner-Dev" target="_blank"><img src="assets/icons/github-icon.png" alt=""></a>
+        <a href="mailto:stephan-steiner-dev@proton.de" target="_blank"><img src="assets/icons/mail-icon.png" alt=""></a>
       </div>
     </nav>
   </div>
