@@ -19,14 +19,11 @@ export class FormfieldComponent {
     name: "",
     email: "",
     message: "",
-    checkbox: ""
+    checkbox: false
   }
 
-
-
-
   post = {
-    endPoint: 'https://localhost:8080/sendMail.php',
+    endPoint: 'https://stephan-steiner-dev.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
