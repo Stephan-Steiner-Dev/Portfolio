@@ -16,10 +16,12 @@
                 </div>
                 <div>
                     <div>
-                        <div>{{ "TESTIMONIALS.CONTENT." + i + ".NAME" | translate }}</div>
+                        <div class="names">{{ item.name }}</div>
                         <div>{{ item.profession }}</div>
                     </div>
-                    <img src="assets/images/content/testimonials-linked-in-black.png" alt="linkedIN">
+                    <a *ngIf="item.homepage !== ''" [href]="item.homepage" target="_blank" rel="noopener noreferrer">
+                        <img [src]="item.image" alt="linkedIN">
+                    </a>
                 </div>
             </div>
         </div>

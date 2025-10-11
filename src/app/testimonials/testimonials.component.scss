@@ -95,13 +95,17 @@
                     display: flex;
                     justify-content: space-between;
 
-                    >img {
-                        width: 84px;
-                        height: 24px;
+                    >a {
                         z-index: 11;
-                        cursor: pointer;
-                        &:hover {
-                            filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(28%) hue-rotate(103deg) brightness(106%) contrast(106%);
+                        >img {
+                            width: 84px;
+                            height: 24px;
+                            
+                            cursor: pointer;
+
+                            &:hover {
+                                filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(28%) hue-rotate(103deg) brightness(106%) contrast(106%);
+                            }
                         }
                     }
                 }
@@ -178,6 +182,11 @@
             }
         }
     }
+}
+
+.names {
+    padding-top:8px;
+    box-sizing: border-box;
 }
 
 @keyframes draw-arrow-rtl {

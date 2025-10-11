@@ -19,9 +19,7 @@
                     width: 100%;
                     justify-content: flex-start;
                     height: auto;
-                    // >p {
 
-                    // }
                     >.description {
                         height: auto;
                     }
@@ -90,6 +88,7 @@
 
             >.back-container {
                 padding: 0 8px;
+
                 >.go-back {
                     &:hover {
                         color: white;
@@ -101,6 +100,7 @@
 
     .next-container {
         padding: 0 8px;
+
         >.next-project {
             &:hover {
                 color: white;

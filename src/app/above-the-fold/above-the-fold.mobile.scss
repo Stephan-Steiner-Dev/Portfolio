@@ -1,5 +1,11 @@
 @use 'breakpoints' as bp;
 
+@include bp.mq-down(bp.$bp-xl) {
+    .user-image-div {
+        filter: grayscale(0%) !important;
+    }
+}
+
 @include bp.mq-down(bp.$bp-lg) {
     .contacts {
         display: none;
@@ -11,8 +17,10 @@
 
     .user-image-div {
         position: absolute;
-        top: 400px;
+        top: 345px;
         left: 25%;
+        height: 310px;
+        width: 210px;
     }
 
     .section-main {
@@ -21,6 +29,12 @@
         padding-top: 50px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+
+@include bp.mq-down(bp.$bp-md) {
+    .user-image-div {
+        top: 380px;
     }
 }
 
@@ -36,7 +50,7 @@
     }
 
     .user-image-div {
-        top: 360px;
+        top: 325px;
         left: 20%;
     }
 
@@ -46,5 +60,11 @@
 
     .upper-half {
         height: 35%;
+    }
+}
+
+@include bp.mq-down(bp.$bp-xs) {
+    .user-image-div {
+        left: 10%;
     }
 }

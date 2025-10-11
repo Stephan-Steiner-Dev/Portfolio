@@ -15,8 +15,10 @@
                     </ng-container>
                 </div>
             </div>
-            <div class="user-image-div">
-                <img src="" alt="">
+            <div (mouseover)="isHovered = true" (mouseleave)="isHovered = false" 
+            [ngStyle]="{ filter: isHovered ? 'grayscale(0%)' : 'grayscale(100%)',transition: '0.3s ease'}" class="user-image-div">
+                <img class="user-image" src="assets/images/content/user-image.png" alt="user-image">
+                <p>Stephan {{ isHovered ? ':D' : ':)' }}</p>
             </div>
         </div>
         <div class="lower-half">
@@ -34,11 +36,11 @@
         <a href="https://www.linkedin.com/in/stephan-steiner-a22b4b380" target="_blank">
             <img src="assets/icons/linkedIn-icon.png" alt="linkedIn">
         </a>
-        
+
         <a href="https://github.com/Stephan-Steiner-Dev" target="_blank">
             <img src="assets/icons/github-icon.png" alt="gitHub">
         </a>
-        
+
         <a href="mailto:stephan-steiner-dev@proton.de" target="_blank">
             <img src="assets/icons/mail-icon.png" alt="mail">
         </a>

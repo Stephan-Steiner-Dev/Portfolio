@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
+/**
+ * The FooterComponent provides the website’s footer section,
+ * including navigation links to the home page and legal notice.
+ *
+ * It manages in-page scrolling behavior and route navigation
+ * with smooth transitions for a better user experience.
+ */
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -9,10 +16,18 @@ import { Router } from "@angular/router";
   styleUrls: ['./footer.component.scss', './footer.mobile.scss']
 })
 export class FooterComponent {
-  constructor(private router: Router) {
-  }
+  /**
+   * Creates an instance of FooterComponent.
+   *
+   * @param {Router} router - Angular router used to navigate between routes.
+   */
+  constructor(private router: Router) {}
 
-  toHomeSection() {
+  /**
+   * Navigates to the home section of the website.
+   * If the user is already on the home route, it smoothly scrolls to the top.
+   */
+  toHomeSection(): void {
     const goTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
     const isHome =
@@ -27,7 +42,10 @@ export class FooterComponent {
     }
   }
 
-  toLegalNotice() {
+  /**
+   * Navigates to the legal notice page and smoothly scrolls to the top.
+   */
+  toLegalNotice(): void {
     const goTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     this.router.navigate(['/legal-notice']).then(() => goTop());
   }

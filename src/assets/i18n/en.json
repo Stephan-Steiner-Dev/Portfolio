@@ -41,16 +41,22 @@
         "SUBTITLE": "Colleagues' Thougts",
         "CONTENT": {
             "0": {
-                "NAME": "Martin Jaros",
-                "COMMENT": "Stephan was a great support during the group project. He worked reliably, kept all agreements, and completed his tasks carefully. His helpfulness was especially appreciated — whenever there were coding issues, he immediately offered assistance and explained complex topics clearly. With his structured and calm manner, Stephan contributed significantly to the smooth progress and success of the project. Working with him was a very pleasant experience."
+                "NAME": "Paul Groß",
+                "COMMENT": "I worked with Stephan on the (Join) project and found him to be a very reliable teammate. You could always count on him to complete his tasks responsibly. I especially appreciate his clean, well-structured code, which made working together as a team much easier and more enjoyable.",
+                "LINK": "",
+                "IMAGE": "assets/images/content/testimonials-linked-in-black.png"
             },
             "1": {
-                "NAME": "Paul Groß",
-                "COMMENT": "I worked with Stephan on the (Join) project and found him to be a very reliable teammate. You could always count on him to complete his tasks responsibly. I especially appreciate his clean, well-structured code, which made working together as a team much easier and more enjoyable."
+                "NAME": "Jan Steiner",
+                "COMMENT": "I completed the Developer Akademie program together with my brother and was impressed by his discipline and focus in every project he worked on. He’s always supportive, gladly shares his knowledge with others, and stays open to learning and accepting help when it helps him grow. His positive attitude and reliability make working with him a real pleasure.",
+                "LINK": "",
+                "IMAGE": "assets/images/content/testimonials-linked-in-black.png"
             },
             "2": {
-                "NAME": "Neandertaler",
-                "COMMENT": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolor pariatur molestias quas fuga odit ex id facere optio. Incidunt optio blanditiis quas in deleniti praesentium fuga soluta fugiat illum."
+                "NAME": "Martin Jaros",
+                "COMMENT": "Stephan was a great support in the group project. He worked reliably, kept all agreements, and completed his tasks carefully. His helpfulness and clear explanations of coding issues were especially appreciated. With his structured and calm manner, he contributed significantly to the project’s success and the pleasant teamwork.",
+                "LINK": "https://www.martin-jaros.ch/",
+                "IMAGE": "assets/images/content/testimonials-linked-in-black.png"
             }
         }
     },
@@ -76,7 +82,7 @@
             }
         },
         "POLICY": "I've read the privacy policy and agree to the processing of my data as outlined.",
-        "ALERT" : "Please accept the privacy policy.",
+        "ALERT": "Please accept the privacy policy.",
         "BTN": "Submit"
     },
     "FOOTER": {

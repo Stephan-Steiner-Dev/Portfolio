@@ -7,7 +7,7 @@
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                     placeholder="{{ 'CONTACT.FORM.1.PLACEHOLDER' | translate }}" required>
                 @if(!name.valid && (name.touched || contactForm.submitted)) {
-                <span>{{ 'CONTACT.FORM.1.ALERT' | translate }}</span>
+                <span class="alert">{{ 'CONTACT.FORM.1.ALERT' | translate }}</span>
                 }
             </div>
 
@@ -17,7 +17,7 @@
                     placeholder="{{ 'CONTACT.FORM.2.PLACEHOLDER' | translate }}"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
                 @if(!email.valid && (email.touched || contactForm.submitted)) {
-                <span>{{ 'CONTACT.FORM.2.ALERT' | translate }}</span>
+                <span class="alert">{{ 'CONTACT.FORM.2.ALERT' | translate }}</span>
                 }
             </div>
 
@@ -26,7 +26,7 @@
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
                     placeholder="{{ 'CONTACT.FORM.3.PLACEHOLDER' | translate }}" required></textarea>
                 @if(message.invalid && (message.touched || contactForm.submitted)) {
-                <span>{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
+                <span class="alert">{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
                 }
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="checkbox-container">
             <span>
                 @if(privacy.invalid && (privacy.touched || contactForm.submitted)){
-                <div class="policy-alert" style="color: #F77B57;">{{ 'CONTACT.ALERT' | translate }}</div>
+                <div class="policy-alert alert" style="color: #F77B57;">{{ 'CONTACT.ALERT' | translate }}</div>
                 }
             </span>
             <div>

@@ -35,13 +35,36 @@
 }
 
 .user-image-div {
-    height: 250px;
-    width: 190px;
-    background-color: white;
+    height: 280px;
+    width: 200px;
+    background-image: url(../../assets/images/content/user-image-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     margin-left: 24px;
     margin-bottom: 24px;
     transform: rotate(10deg);
     transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+
+    >.user-image {
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin: 8px;;
+        height: 80%;
+
+    }
+
+    >p {
+        color: black;
+        font-family: kalam;
+        font-size: 24px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .lower-half {
@@ -167,6 +190,10 @@
                 opacity 0.3s ease,
                 transform 0.5s ease-out;
         }
+    }
+
+    >img {
+        pointer-events: none;
     }
 }
 
