@@ -4,7 +4,7 @@
     padding-top: 128px;
     display: flex;
     align-items: space-between;
-    height: 560px;
+    height: auto;
     position: relative;
 
     >.logo {
@@ -16,7 +16,7 @@
 
     >.input-div {
         gap: 40px;
-        height: 271px;
+        height: auto;
         width: 480px;
         display: flex;
         flex-direction: column;
@@ -32,6 +32,10 @@
                 height: 59px;
                 padding: 16px 24px;
                 cursor: pointer;
+                // border-bottom: 1px solid transparent;
+                border-top: 1px solid transparent;
+                display: flex;
+                flex-direction: column;
 
                 &:hover {
                     border-bottom: 1px solid blue;
@@ -48,7 +52,7 @@
 
         >.checkbox-container {
             position: relative;
-            height: 121px;
+            height: auto;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -64,8 +68,17 @@
     }
 }
 
+.message-container {
+    height: auto !important;
+
+    >span {
+        height: 20px;
+    }
+}
+
 .alert {
-    color:red !important;
+    color: red !important;
+    font-size: 16px !important;
 }
 
 input[type=submit] {
@@ -114,6 +127,11 @@ textarea {
     font-family: 'BricolageGrotesque';
 }
 
+textarea {
+    max-height: 100px;
+    max-width: 450px;
+}
+
 input[type="checkbox"] {
     margin: 8px;
     -webkit-appearance: none;
@@ -133,7 +151,7 @@ input[type="checkbox"] {
 
 .checkbox-label {
     margin-left: 20px;
-    height: 35px;
+    height: auto;
     align-content: center;
 }
 
@@ -207,7 +225,8 @@ input[type="checkbox"]:focus::before {
     >.input-div {
         >.checkbox-container {
             >span {
-                margin-left: 48px;
+                margin-left:48px;
+                height: 20px;
             }
         }
     }

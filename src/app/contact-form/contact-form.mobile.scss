@@ -7,8 +7,8 @@
     }
 
     .section-contact {
-        height: 1270px;
-        padding: 144px 60px 75px 60px;
+        height: auto;
+        padding: 144px 60px 0px 60px;
         box-sizing: border-box;
     }
 
@@ -33,12 +33,12 @@
         }
     }
 
-    .arrow {
-        left: 0;
-    }
+    // .arrow {
+    //     left: 0;
+    // }
 
     .arrow-container {
-        top: 440px;
+        display: none;
     }
 }
 
@@ -54,7 +54,7 @@
 
 @include bp.mq-down(bp.$bp-md - 0.02px) {
     .section-contact {
-        padding: 144px 16px 75px 16px;
+        padding: 144px 16px 0px 16px;
     }
 
     .left-content {

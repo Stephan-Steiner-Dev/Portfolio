@@ -25,9 +25,12 @@
                 <label for="message">{{ 'CONTACT.FORM.3.TITLE' | translate }}</label>
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
                     placeholder="{{ 'CONTACT.FORM.3.PLACEHOLDER' | translate }}" required></textarea>
+                <span>
                 @if(message.invalid && (message.touched || contactForm.submitted)) {
                 <span class="alert">{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
                 }
+                </span>
+
             </div>
         </div>
 
