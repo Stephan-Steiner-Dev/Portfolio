@@ -31,9 +31,20 @@
         }
     }
 
-    .icon-container{
+    .icon-container {
         >div {
-            font-size: 14px;;
+            font-size: 14px;
+            ;
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-lg - 0.02px) {
+    .icon-container {
+        >img {
+            &:hover {
+                filter: none;
+            }
         }
     }
 }

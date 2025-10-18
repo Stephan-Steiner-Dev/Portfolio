@@ -22,7 +22,9 @@
     }
 
     .skill-set {
-        justify-content: center;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
     }
 
     .pull-container {
@@ -50,7 +52,7 @@
     }
 
     .top-content img {
-      height: 230px;
+        height: 230px;
     }
 
     .skill-section {

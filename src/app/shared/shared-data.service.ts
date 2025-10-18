@@ -74,20 +74,16 @@ export class SharedDataService {
       ]
     },
     {
-      projectName: 'Pokedex',
+      projectName: 'DABubble',
       headline: 'Description',
-      descriptionText: `An app with complete data on all Pokémon. It has a search function and many other features.`,
+      descriptionText: `In progress.`,
       subheadline: 'Implementation Details',
-      detailText: `One of my first projects. This was the first time I worked with an API in combination with JavaScript.`,
-      duration: 'Duration: 3 weeks',
-      image: 'assets/images/content/pokedex.png',
-      projectUrl: 'https://stephan-steiner.developerakademie.net/12Pokedex/index.html',
-      projectGitHub: 'https://github.com/ElStephano/Pokedex',
+      detailText: `In progress.`,
+      duration: '',
+      image: 'assets/images/content/DABubble.jpg',
+      projectUrl: '#',
+      projectGitHub: 'https://github.com/stephan-steiner-dev/',
       icons: [
-        { src: 'assets/icons/JS-icon.png', label: 'JavaScript' },
-        { src: 'assets/icons/HTML-icon.png', label: 'HTML' },
-        { src: 'assets/icons/CSS-icon.png', label: 'CSS' },
-        { src: 'assets/icons/API-icon.png', label: 'REST-API' }
       ]
     }
   ];

@@ -1,10 +1,10 @@
 <section class="form">
     <app-circle-badge class="logo"></app-circle-badge>
-    <form class="input-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form class="input-div" autocomplete="off" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div>
             <div class="name-container">
                 <label for="name">{{ 'CONTACT.FORM.1.TITLE' | translate }}</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                <input #name="ngModel" autocomplete="off" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                     placeholder="{{ 'CONTACT.FORM.1.PLACEHOLDER' | translate }}" required>
                 @if(!name.valid && (name.touched || contactForm.submitted)) {
                 <span class="alert">{{ 'CONTACT.FORM.1.ALERT' | translate }}</span>
@@ -13,7 +13,7 @@
 
             <div class="email-container">
                 <label for="email">{{ 'CONTACT.FORM.2.TITLE' | translate }}</label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                <input #email="ngModel" autocomplete="off" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="{{ 'CONTACT.FORM.2.PLACEHOLDER' | translate }}"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
                 @if(!email.valid && (email.touched || contactForm.submitted)) {
@@ -23,12 +23,12 @@
 
             <div class="message-container">
                 <label for="message">{{ 'CONTACT.FORM.3.TITLE' | translate }}</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
+                <textarea #message="ngModel" autocomplete="off" [(ngModel)]="contactData.message" name="message" id="message"
                     placeholder="{{ 'CONTACT.FORM.3.PLACEHOLDER' | translate }}" required></textarea>
                 <span>
-                @if(message.invalid && (message.touched || contactForm.submitted)) {
-                <span class="alert">{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
-                }
+                    @if(message.invalid && (message.touched || contactForm.submitted)) {
+                    <span class="alert">{{ 'CONTACT.FORM.3.ALERT' | translate }}</span>
+                    }
                 </span>
 
             </div>
@@ -46,10 +46,14 @@
                 <label class="checkbox-label" for="checkbox">
                     {{ 'CONTACT.POLICY' | translate }}</label>
             </div>
-
-            <input type="submit" value="{{ 'CONTACT.BTN' | translate}}">
+            <div class="submit-section">
+                <div class="feedback-container">
+                @if(sent) {
+                <div class="feedback">Gesendet!</div>
+                }
+                </div>
+                <input type="submit" value="{{ 'CONTACT.BTN' | translate}}">
+            </div>
         </div>
-
-
     </form>
 </section>

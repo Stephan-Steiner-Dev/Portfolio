@@ -62,6 +62,14 @@
             >a {
                 >button {
                     margin-top: 20px;
+
+                    &:hover {
+                        color: black;
+                        transform: none;
+                        background-color: white;
+                        border-bottom: 6px solid rgb(0, 0, 0);
+                        border-right: 6px solid rgb(0, 0, 0);
+                    }
                 }
             }
         }

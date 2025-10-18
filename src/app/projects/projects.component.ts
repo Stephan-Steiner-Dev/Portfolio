@@ -83,9 +83,9 @@ export class ProjectsComponent {
                 Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`
     },
     {
-      img: 'assets/images/content/pokedex.png',
-      name: 'POKEDEX',
-      content: `An app with complete data on all Pokémon. It has a search function and many other features.`
+      img: 'assets/images/content/DABubble.jpg',
+      name: 'DABUBBLE',
+      content: `In progress.`
     }
   ];
 

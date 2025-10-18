@@ -31,10 +31,10 @@
         "DESCRIPTION": "Feel free to check out my projects and try them out yourself. I care about making sure they don’t just look good, but also work smoothly on any device. Clean, efficient code and a user experience that’s enjoyable are always my priorities.",
         "JOIN": "Join",
         "EL_POLLO_LOCCO": "El Pollo Locco",
-        "POKEDEX": "Pokedex",
+        "DABUBBLE": "DABubble",
         "JOIN_DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "EL_POLLO_LOCCO_DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "POKEDEX_DESCRIPTION": "An app with complete data on all Pokemon. It has a search function and many other features."
+        "DABUBBLE_DESCRIPTION": "In progress."
     },
     "TESTIMONIALS": {
         "TITLE": "IN THEIR WORDS:",
@@ -106,11 +106,11 @@
             "DURATION": "Duration: 3 weeks"
         },
         "2": {
-            "NAME": "Pokedex",
+            "NAME": "DABubble",
             "DESCRIPTION": "Description",
-            "DESCRIPTION_CONTENT": "An app with complete data on all Pokemon. It has a search function and many other features.",
+            "DESCRIPTION_CONTENT": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
             "IMPLEMENTATION_DESTAILS": "Implementation Details",
-            "IMPLEMENTATION_DESTAILS_CONTENT": "One of my first projects. This was the first time I worked with an API in combination with JavaScript.",
+            "IMPLEMENTATION_DESTAILS_CONTENT": "In progress.",
             "DURATION": "Duration: 3 weeks"
         },
         "BACK_BTN": "GoBack",

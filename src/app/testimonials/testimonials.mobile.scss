@@ -28,6 +28,46 @@
             top: 48px !important;
         }
     }
+
+    .testimonials {
+        >div:nth-child(1) {
+            >.lower-content {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                width: 100%;
+                height: 402.82px;
+
+                >.notice {
+                    &::after {
+                        display: none !important;
+                    }
+
+                    &:hover {
+                        >div:nth-child(2) {
+                            >div:nth-child(1) {
+                                color: white;
+                            }
+
+                            >div:nth-child(2) {
+                                color: white;
+                            }
+
+                        }
+                    }
+
+                    >div:nth-child(2) {
+                        >a {
+                            >img {
+                                &:hover {
+                                    filter: none;                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include bp.mq-down(bp.$bp-md - 0.02px) {
@@ -90,10 +130,6 @@
         >div:nth-child(2) {
             width: 90% !important;
         }
-
-        &::after {
-            display: none !important;
-        }
     }
 
     :host .colleagues-headline {
@@ -134,6 +170,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@include bp.mq-down(bp.$bp-xs - 0.02px) {
+    .testimonials {
+        >div:nth-child(1) {
+            height: 1620px !important;
         }
     }
 }

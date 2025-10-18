@@ -81,10 +81,25 @@
     font-size: 16px !important;
 }
 
+.submit-section {
+    height: 40px !important;
+}
+
+.feedback-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: green;
+
+    >.feedback {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
+
 input[type=submit] {
-    position: absolute;
-    right: 0;
-    bottom: 0;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -151,6 +166,7 @@ input[type="checkbox"] {
 
 .checkbox-label {
     margin-left: 20px;
+    margin-top: 8px;
     height: auto;
     align-content: center;
 }
@@ -225,7 +241,7 @@ input[type="checkbox"]:focus::before {
     >.input-div {
         >.checkbox-container {
             >span {
-                margin-left:48px;
+                margin-left: 48px;
                 height: 20px;
             }
         }

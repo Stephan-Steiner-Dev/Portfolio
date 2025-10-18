@@ -41,6 +41,9 @@ export class FormfieldComponent {
     checkbox: false
   };
 
+
+  sent = false;
+
   /**
    * Configuration for the POST request that sends the contact form data.
    * Contains the backend endpoint, request body formatter, and headers.
@@ -71,6 +74,8 @@ export class FormfieldComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.sent = true;
+            setTimeout(() => this.sent = false, 3000);
             ngForm.resetForm();
           },
           error: (error: Error) => {

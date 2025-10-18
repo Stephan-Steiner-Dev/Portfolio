@@ -25,3 +25,43 @@ html {
      font-style: normal;
      font-display: swap;
 }
+
+/* Chrome, Edge, Safari (WebKit) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  /* Textfarbe & Caret */
+  -webkit-text-fill-color: var(--input-fg, #111) !important;
+  caret-color: var(--input-fg, #111);
+
+  /* Hintergrund überschreiben (statt gelb/grün) */
+  -webkit-box-shadow: 0 0 0 1000px var(--input-bg, #fff) inset !important;
+  box-shadow: 0 0 0 1000px var(--input-bg, #fff) inset !important;
+
+  /* Border/Outline konsistent halten */
+  border-color: var(--input-border, #d0d5dd) !important;
+  outline: none;
+
+  /* Verhindert kurzes „Aufblitzen“ der Autofill-Farbe beim Mounten */
+  transition: background-color 9999s ease-out 0s !important;
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+  -moz-text-fill-color: var(--input-fg, #111) !important;
+  box-shadow: 0 0 0 1000px var(--input-bg, #fff) inset !important;
+  border-color: var(--input-border, #d0d5dd) !important;
+}
+
+/* Optional: Dark Mode anpassen */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --input-bg: transparent;
+    --input-fg: #e8eaed;
+    --input-border: transparent;
+  }
+}

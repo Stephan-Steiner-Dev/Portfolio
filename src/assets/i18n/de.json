@@ -31,10 +31,10 @@
         "DESCRIPTION": "Schaut euch gerne meine Projekte an und probiert sie selbst aus. Mir ist wichtig, dass sie nicht nur gut aussehen, sondern auch auf allen Geräten reibungslos funktionieren. Dabei lege ich Wert auf sauberen, effizienten Code und eine Benutzerfreundlichkeit, die Spaß macht.",
         "JOIN": "Join",
         "EL_POLLO_LOCCO": "El Pollo Locco",
-        "POKEDEX": "Pokedex",
+        "DABUBBLE": "DABubble",
         "JOIN_DESCRIPTION": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
         "EL_POLLO_LOCCO_DESCRIPTION": "Jump-and-Run-Spiel mit Wurfmechanik auf objektorientierter Basis. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-        "POKEDEX_DESCRIPTION": "Eine App mit vollständigen Daten zu allen Pokémon. Sie verfügt über eine Suchfunktion und viele weitere Features."
+        "DABUBBLE_DESCRIPTION": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation."
     },
     "TESTIMONIALS": {
         "TITLE": "IN DEREN WORTEN:",
@@ -106,12 +106,12 @@
             "DURATION": "Dauer: 3 Wochen"
         },
         "2": {
-            "NAME": "Pokedex",
+            "NAME": "DABubble",
             "DESCRIPTION": "Beschreibung",
-            "DESCRIPTION_CONTENT": "Eine App mit vollständigen Daten zu allen Pokémon. Sie verfügt über eine Suchfunktion und viele weitere Features.",
+            "DESCRIPTION_CONTENT": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation.",
             "IMPLEMENTATION_DESTAILS": "Umsetzungsdetails",
-            "IMPLEMENTATION_DESTAILS_CONTENT": "Eines meiner ersten Projekte. Dies war das erste Mal, dass ich mit einer API in Kombination mit JavaScript gearbeitet habe.",
-            "DURATION": "Dauer: 3 Wochen"
+            "IMPLEMENTATION_DESTAILS_CONTENT": "In Arbeit.",
+            "DURATION": "Dauer: In Arbeit."
         },
         "BACK_BTN": "Zurück",
         "FORWARD_BTN": "Nächstes Projekt"
