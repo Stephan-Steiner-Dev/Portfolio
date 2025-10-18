@@ -91,11 +91,22 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: green;
+    color: white;
 
     >.feedback {
         font-size: 16px;
-        margin-right: 20px;
+        margin-right: 10px;
+        padding-right:10px;
+        display: flex;
+        align-items: center;
+        background-color: green;
+        border-radius: 20px;
+
+
+        >img {
+            margin-right: 16px;
+            color: black;
+        }
     }
 }
 

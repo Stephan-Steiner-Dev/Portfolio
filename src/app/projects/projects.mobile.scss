@@ -99,7 +99,7 @@
         top: auto;
         bottom: 16px;
         color: black;
-        border: 2px solid black;
+        border: 1px solid black;
         border-bottom: 6px solid black;
         border-right: 6px solid black;
         top: 85%;
@@ -187,13 +187,13 @@
 
 @include bp.mq-down(bp.$bp-xs - 0.02px) {
     :host .projects-btn.first-btn {
-        font-size: 14px;
+        font-size: 16px;
         height: 36px;
-        top: 96%;
+        top: 105%;
     }
 
     :host .projects-btn {
-        font-size: 14px;
+        font-size: 16px;
         height: 36px;
         top: 102%;
     }

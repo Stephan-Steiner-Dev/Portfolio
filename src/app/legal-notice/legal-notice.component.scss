@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     overflow: visible;
+    height: 100vh;
+    justify-content: space-between;
 
     >.bg-div {
         display: flex;
@@ -15,8 +17,11 @@
         >.headline {
             max-width: 1440px;
             width: 100%;
+            height: 250px;
             padding-left: 120px;
             box-sizing: border-box;
+            display: flex;
+            align-items: center;
         }
     }
 }
@@ -71,6 +76,9 @@ p {
     background-image: url('../../assets/images/content/footer-bg.png');
     background-size: cover;
     height: 250px;
+    // width: 100%;
+    // position: absolute;
+    // bottom: 0;
     padding-top: 40px;
     box-sizing: border-box;
 }
